@@ -1,6 +1,6 @@
-# Unix Environment Setup <!-- omit in toc -->
+# Unix Environment Setup
 
-**A Thorough Guide to Your Unix Software Engineering Environment Setup**
+**A thorough guide to setting up a powerful software engineering Unix environment.**
 
 <br>
 
@@ -10,27 +10,22 @@
 
 <br>
 
-## Table of Contents <!-- omit in toc -->
+## Table of Contents
 
-- [Overview](#overview)
-  - [Some Tips Before You Start](#some-tips-before-you-start)
+- [Unix Environment Setup](#unix-environment-setup)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+    - [Some Tips Before You Start](#some-tips-before-you-start)
 
 <br>
 
 Homebrew
-
 Zsh, Oh-My-Zsh
-
 Git, Git Environment Variables ()
-
 NVM, Node, NPM, Typescript
-
 React Web, React Native
-
 PostgreSQL
-
 MongoDB
-
 Rbenv, Ruby, Ruby Gems
 
 <br>
@@ -50,22 +45,32 @@ I will use these dropdowns to keep the guide relatively clean and focused on ins
 Finally, before you start, I heavily recommend three things:
 
 1. First, and most importantly, you **must** use methodical, step-by-step attention to detail. This will be integral to a career in software engineering, but especially when it comes to setting up your environment, **doing these steps out of order can have long-lasting, code-breaking implications**.
-2. Second, if you're brand new to engineering or aren't very comfortable with your computer, please review the [Guide to the Tools of the Trade]. Even for experienced engineers, **focusing on these more basic tools can significantly level up one's coding prowess and productivity**.
+2. Second, if you're _brand_ new to engineering or aren't very comfortable with your computer, please review the [Guide to Unix Tools of the Trade]. Even for experienced engineers, **focusing on these more basic tools can significantly level up one's coding prowess and productivity**.
 3. Third, open the [Glossary] in a new tab so you can reference it at any time. If you are unsure of any words used in this repository, just hop over and look it up.
 
 Let's dive in!
+
+<br>
+
+***
 
 ##
 
 [back to top]
 
+<br>
+
 ***
 
 <!-- Links -->
-
-[Linux Version]: github.com/mishakessler/linux-environment
-[M1 Version]: github.com/mishakessler/m1-environment
 [Guide to Determining Your Environment]: github.com/mishakessler/determine-your-environment
-[Guide to the Tools of the Trade]: ./TOOLS.md
+
+[Unix Version]: github.com/mishakessler/unix-environment
+[M1 Version]: github.com/mishakessler/m1-environment
+[Linux Version]: github.com/mishakessler/linux-environment
+
+[Unix Tools of the Trade]: github.com/mishakessler/unix-tools-of-the-trade
+
 [Glossary]: github.com/mishakessler/glossary
+
 [back to top]: #table-of-contents
