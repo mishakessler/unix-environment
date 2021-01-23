@@ -81,6 +81,8 @@ This guide will be using **terminal** for all installations. Let's open terminal
 
 ### Your Core Package Manager
 
+
+
 #### Homebrew
 
 <br>
