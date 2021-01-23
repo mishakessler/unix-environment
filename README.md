@@ -1,6 +1,6 @@
-# Unix Environment Setup
+# Unix Environment Setup <!-- omit in toc -->
 
-**An exceptionally thorough guide to setting up a powerful software engineering Unix environment.**
+**An extremely thorough guide to setting up a powerful software engineering Unix environment.**
 
 <br>
 
@@ -10,49 +10,44 @@
 
 <br>
 
-## TABLE OF CONTENTS
+## TABLE OF CONTENTS <!-- omit in toc -->
 
-- [Unix Environment Setup](#unix-environment-setup)
-  - [TABLE OF CONTENTS](#table-of-contents)
-  - [OVERVIEW](#overview)
-    - [Some Tips Before You Start](#some-tips-before-you-start)
-  - [INSTALLATIONS](#installations)
-    - [Your Core Package Manager](#your-core-package-manager)
-      - [Homebrew](#homebrew)
-    - [Your Terminal Shell](#your-terminal-shell)
-      - [Zsh](#zsh)
-      - [Oh-My-Zsh](#oh-my-zsh)
-    - [Your Version Control Manager](#your-version-control-manager)
-      - [Git](#git)
-      - [Git Configurations](#git-configurations)
-    - [Your Frontend Scripting Languages](#your-frontend-scripting-languages)
-      - [NVM](#nvm)
-      - [Node.js](#nodejs)
-      - [NPM](#npm)
-      - [JavaScript Add-Ons](#javascript-add-ons)
-    - [Your Database Management Programs](#your-database-management-programs)
-      - [PostgreSQL](#postgresql)
-      - [MongoDB](#mongodb)
-    - [Your Backend Scripting Languages](#your-backend-scripting-languages)
-      - [Rbenv](#rbenv)
-      - [Ruby](#ruby)
-      - [Ruby Gems](#ruby-gems)
-    - [Your GUI Applications](#your-gui-applications)
-      - [Google Chrome](#google-chrome)
-      - [Visual Studio Code](#visual-studio-code)
-      - [PostMan](#postman)
-  - [CUSTOMIZATIONS](#customizations)
-    - [Your macOS Environment](#your-macos-environment)
-      - [macOS Plugins](#macos-plugins)
-        - [Magnet](#magnet)
-    - [Your Browser Environment](#your-browser-environment)
-      - [Google Chrome Extensions](#google-chrome-extensions)
-    - [Your Coding Environment](#your-coding-environment)
-      - [VSCode Settings](#vscode-settings)
-      - [VSCode Extensions](#vscode-extensions)
-      - [VSCode Themes](#vscode-themes)
-        - [Color Theme](#color-theme)
-        - [Icon Theme](#icon-theme)
+- [OVERVIEW](#overview)
+  - [Some Tips Before You Start](#some-tips-before-you-start)
+- [INSTALLATIONS](#installations)
+  - [Your Core Package Manager](#your-core-package-manager)
+    - [Homebrew](#homebrew)
+  - [Your Terminal Shell](#your-terminal-shell)
+    - [Zsh](#zsh)
+    - [Oh-My-Zsh](#oh-my-zsh)
+  - [Your Version Control Manager](#your-version-control-manager)
+    - [Git](#git)
+    - [Git Configurations](#git-configurations)
+  - [Your Frontend Scripting Languages](#your-frontend-scripting-languages)
+    - [NVM](#nvm)
+    - [Node.js](#nodejs)
+    - [NPM](#npm)
+    - [JavaScript Add-Ons](#javascript-add-ons)
+  - [Your Database Management Programs](#your-database-management-programs)
+    - [PostgreSQL](#postgresql)
+    - [MongoDB](#mongodb)
+  - [Your Backend Scripting Languages](#your-backend-scripting-languages)
+    - [Rbenv](#rbenv)
+    - [Ruby](#ruby)
+    - [Ruby Gems](#ruby-gems)
+  - [Your GUI Applications](#your-gui-applications)
+    - [Google Chrome](#google-chrome)
+    - [Visual Studio Code](#visual-studio-code)
+    - [PostMan](#postman)
+- [CUSTOMIZATIONS](#customizations)
+  - [Your macOS Environment](#your-macos-environment)
+    - [macOS Plugins](#macos-plugins)
+  - [Your Browser Environment](#your-browser-environment)
+    - [Google Chrome Extensions](#google-chrome-extensions)
+  - [Your Coding Environment](#your-coding-environment)
+    - [VSCode Settings](#vscode-settings)
+    - [VSCode Extensions](#vscode-extensions)
+    - [VSCode Themes](#vscode-themes)
 
 <br>
 
@@ -196,7 +191,7 @@ This guide will be using **terminal** for all installations. Let's open terminal
 
 #### macOS Plugins
 
-##### Magnet <!-- omit in tos -->
+##### Magnet <!-- omit in toc -->
 
 <br>
 
@@ -228,9 +223,9 @@ This guide will be using **terminal** for all installations. Let's open terminal
 
 #### VSCode Themes
 
-##### Color Theme
+##### Color Theme <!-- omit in toc -->
 
-##### Icon Theme
+##### Icon Theme <!-- omit in toc -->
 
 <br>
 
