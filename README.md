@@ -22,6 +22,9 @@
     - [Your Terminal Shell](#your-terminal-shell)
       - [Zsh](#zsh)
       - [Oh-My-Zsh](#oh-my-zsh)
+    - [Your Version Control Manager](#your-version-control-manager)
+      - [Git](#git)
+      - [Git Configurations](#git-configurations)
     - [Your Frontend Scripting Languages](#your-frontend-scripting-languages)
       - [NVM](#nvm)
       - [Node.js](#nodejs)
@@ -96,6 +99,26 @@ This guide will be using **terminal** for all installations. Let's open terminal
 #### Zsh
 
 #### Oh-My-Zsh
+
+<br>
+
+[back to top]
+
+<br>
+
+### Your Version Control Manager
+
+#### Git
+
+#### Git Configurations
+
+##### Git Security Token <!-- omit in toc -->
+
+##### Git Author Information <!-- omit in toc -->
+
+##### Git Branch Naming Convention <!-- omit in toc -->
+
+##### Git Rebase Convention <!-- omit in toc -->
 
 <br>
 
