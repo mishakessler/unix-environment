@@ -5,8 +5,10 @@
 <br>
 
 > _Last Updated: 01/23/2021_
->
-> _Please Note: This guide is written for **non-M1 chip** Unix computers, and tested on **macOS Big Sur**. If you are on an M1 chip MacBook, please consult the [M1 Version]; if you are on Linux, please consult my [Linux Version]; if you are unsure, please consult my [Guide to Determining Your Environment]._
+
+<br>
+
+> ⚠️ **This guide is written for non-M1 chip Unix computers, and tested on macOS Big Sur**. If you are on an M1 chip MacBook, please consult the [M1 Version]; if you are on Linux, please consult my [Linux Version]. If you are unsure, please consult my [Guide to Determining Your Environment].
 
 <br>
 
@@ -14,6 +16,9 @@
 
 - [OVERVIEW](#overview)
   - [Some Tips Before You Start](#some-tips-before-you-start)
+    - [1: Familiarize Yourself With The Tools of the Trade](#1-familiarize-yourself-with-the-tools-of-the-trade)
+    - [2: Practice Researching Anything & Everything](#2-practice-researching-anything--everything)
+    - [3: Be Thorough & Methodical](#3-be-thorough--methodical)
 - [INSTALLATIONS](#installations)
   - [Your Core Package Manager](#your-core-package-manager)
     - [Homebrew](#homebrew)
@@ -57,7 +62,14 @@ This guide covers the core technologies your computer will need for a **powerful
 
 <details><summary>Click Me!</summary><br>
 
-I will use these dropdowns to keep the guide relatively clean and focused on installation steps, but to still include important context about what is happening with each download, and important notes on possible errors. If you find yourself curious about what is actually happening, or have an error that you can't get around, just check them out!
+I will use these dropdowns to keep the guide relatively clean and focused on installation steps, but to still include important context about what is happening with each download. 
+
+Emoji Key: 
+
+- 🔍 Learn More
+- ⚠️ Warnings
+- ❗ Errors
+- ✅ Successes
 
 </details><br>
 
@@ -65,13 +77,25 @@ I will use these dropdowns to keep the guide relatively clean and focused on ins
 
 Finally, before you start, I heavily recommend three things:
 
-1. First, and most importantly, you **must** use methodical, step-by-step attention to detail. This will be integral to a career in software engineering, but especially when it comes to setting up your environment, **doing these steps out of order can have long-lasting, code-breaking implications**.
-2. Second, if you're _brand_ new to engineering or aren't very comfortable with your computer, including the command line interface, please review the guide to [Tools of the Trade]; even for experienced engineers, **focusing on these more basic tools can significantly level up one's coding prowess and productivity**.
-3. Third, open the [Glossary] in a new tab so you can reference it at any time. If you are unsure of any words used in this repository, just hop over and look it up.
+#### 1: Familiarize Yourself With The Tools of the Trade
+
+If you're _brand_ new to software engineering, or if you aren't particularly comfortable with your computer, including the command line interface, please review the guide to [Tools of the Trade]. Even for experienced engineers, **focusing on these more basic tools can significantly level up one's coding prowess and productivity**.
+
+#### 2: Practice Researching Anything & Everything
+
+With the vast complexities of software engineering, it is simply impossible to know and memorize **everything** you will need on a daily basis. Get used to researching and confirming small details that will make a huge differences. 
+
+In this spirit, open up the [Glossary] in a new tab so you can reference it at any time during setup. If you're unsure or confused about the technologies or concepts I reference, just hop over to the Glossary and look it up.
+
+#### 3: Be Thorough & Methodical
+
+Finally, and perhaps most importantly, you **must** use methodical, step-by-step attention to detail. This is integral to a career in software engineering, but especially when setting up your environment, **doing these steps out of order can have long-lasting, code-breaking implications**.
 
 Let's dive in!
 
 <br>
+
+***
 
 ## INSTALLATIONS
 
@@ -81,13 +105,42 @@ This guide will be using **terminal** for all installations. Let's open terminal
 
 ### Your Core Package Manager
 
+<img align="right" width="300" src="https://imgur.com/CDY3Eeu.png">
+
+#### Homebrew 
+
+[Brew Website] | [Brew Documentation] | [Brew GitHub] | [Brew Issue Tickets]
+
+Homebrew is a _package manager_ for macOS. Most core software you will need for the Unix dev environment is installed via Homebrew.
+
+<details><summary>🔍 Learn More</summary><br>
+
+Homebrew is a package manager, meaning, it provides software packages and can handle safe updating and uninstalling as needed. Homebrew is considered essential for core software which macOS doesn't ship natively, but which are necessary for your work. 
+
+Homebrew packages are divided into **formulae**, **casks**, **taps**, or **bottles**, which . For the time being, we'll only be using formulae and casks.
+
+Homebrew utilizes the `brew` command in terminal. 
+
+</details><br>
 
 
-#### Homebrew
+**STEP 1.** Copy and paste the following script into your terminal.
+
+```shell
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+**STEP 2.** Enter your password. As you type, your cursor will not move and your typing won't be visible– simply type your full password and hit enter.
+
+**SUCCESS MESSAGE.** Once Homebrew installs, you'll receive 
+
+**POTENTIAL ERRORS.** Few errors should happen at this stage. 
+
+
 
 <br>
 
-[back to top]
+🔼 [back to top] 
 
 <br>
 
@@ -99,7 +152,7 @@ This guide will be using **terminal** for all installations. Let's open terminal
 
 <br>
 
-[back to top]
+🔼 [back to top] 
 
 <br>
 
@@ -119,7 +172,7 @@ This guide will be using **terminal** for all installations. Let's open terminal
 
 <br>
 
-[back to top]
+🔼 [back to top] 
 
 <br>
 
@@ -137,7 +190,7 @@ This guide will be using **terminal** for all installations. Let's open terminal
 
 <br>
 
-[back to top]
+🔼 [back to top] 
 
 <br>
 
@@ -149,7 +202,7 @@ This guide will be using **terminal** for all installations. Let's open terminal
 
 <br>
 
-[back to top]
+🔼 [back to top] 
 
 <br>
 
@@ -169,7 +222,7 @@ This guide will be using **terminal** for all installations. Let's open terminal
 
 <br>
 
-[back to top]
+🔼 [back to top] 
 
 <br>
 
@@ -183,9 +236,11 @@ This guide will be using **terminal** for all installations. Let's open terminal
 
 <br>
 
-[back to top]
+🔼 [back to top] 
 
 <br>
+
+***
 
 ## CUSTOMIZATIONS
 
@@ -197,7 +252,7 @@ This guide will be using **terminal** for all installations. Let's open terminal
 
 <br>
 
-[back to top]
+🔼 [back to top] 
 
 <br>
 
@@ -213,7 +268,7 @@ This guide will be using **terminal** for all installations. Let's open terminal
 
 <br>
 
-[back to top]
+🔼 [back to top] 
 
 <br>
 
@@ -231,9 +286,11 @@ This guide will be using **terminal** for all installations. Let's open terminal
 
 <br>
 
-[back to top]
+🔼 [back to top] 
 
 <br>
+
+***
 
 <!-- Links -->
 [Guide to Determining Your Environment]: github.com/mishakessler/determine-your-environment
@@ -242,4 +299,10 @@ This guide will be using **terminal** for all installations. Let's open terminal
 [Linux Version]: github.com/mishakessler/linux-environment
 [Tools of the Trade]: github.com/mishakessler/tools-of-the-trade
 [Glossary]: github.com/mishakessler/glossary
+
+[Brew Website]: https://brew.sh/
+[Brew Documentation]: https://docs.brew.sh/
+[Brew GitHub]: https://github.com/Homebrew/
+[Brew Issue Tickets]: https://github.com/Homebrew/brew/issues
+
 [back to top]: #table-of-contents
