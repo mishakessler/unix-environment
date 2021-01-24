@@ -2,12 +2,6 @@
 
 **An extremely thorough guide to setting up a powerful software engineering Unix environment.**
 
-<br>
-
-> _Last Updated: 01/23/2021_
-
-<br>
-
 > ⚠️ **This guide is written for non-M1 chip Unix computers, and tested on macOS Big Sur**. If you are on an M1 chip MacBook, please consult the [M1 Version]; if you are on Linux, please consult my [Linux Version]. If you are unsure, please consult my [Guide to Determining Your Environment].
 
 <br>
@@ -16,9 +10,6 @@
 
 - [OVERVIEW](#overview)
   - [Some Tips Before You Start](#some-tips-before-you-start)
-    - [1: Familiarize Yourself With The Tools of the Trade](#1-familiarize-yourself-with-the-tools-of-the-trade)
-    - [2: Practice Researching Anything & Everything](#2-practice-researching-anything--everything)
-    - [3: Be Thorough & Methodical](#3-be-thorough--methodical)
 - [INSTALLATIONS](#installations)
   - [Your Core Package Manager](#your-core-package-manager)
     - [Homebrew](#homebrew)
@@ -77,25 +68,25 @@ Emoji Key:
 
 Finally, before you start, I heavily recommend three things:
 
-#### 1: Familiarize Yourself With The Tools of the Trade
+#### Familiarize Yourself With The Tools of the Trade <!-- omit in toc -->
 
 If you're _brand_ new to software engineering, or if you aren't particularly comfortable with your computer, including the command line interface, please review the guide to [Tools of the Trade]. Even for experienced engineers, **focusing on these more basic tools can significantly level up one's coding prowess and productivity**.
 
-#### 2: Practice Researching Anything & Everything
+#### Practice Researching Anything & Everything <!-- omit in toc -->
 
 With the vast complexities of software engineering, it is simply impossible to know and memorize **everything** you will need on a daily basis. Get used to researching and confirming small details that will make a huge differences. 
 
 In this spirit, open up the [Glossary] in a new tab so you can reference it at any time during setup. If you're unsure or confused about the technologies or concepts I reference, just hop over to the Glossary and look it up.
 
-#### 3: Be Thorough & Methodical
+#### Be Thorough & Methodical <!-- omit in toc -->
 
 Finally, and perhaps most importantly, you **must** use methodical, step-by-step attention to detail. This is integral to a career in software engineering, but especially when setting up your environment, **doing these steps out of order can have long-lasting, code-breaking implications**.
+
+<br>
 
 Let's dive in!
 
 <br>
-
-***
 
 ## INSTALLATIONS
 
@@ -113,7 +104,7 @@ This guide will be using **terminal** for all installations. Let's open terminal
 
 Homebrew is a _package manager_ for macOS. Most core software you will need for the Unix dev environment is installed via Homebrew.
 
-<details><summary>Learn More 🔍</summary><br>
+<details><summary>Learn More 🔎</summary><br>
 
 Homebrew is a package manager, meaning, it provides software packages and can handle safe updating and uninstalling as needed. Homebrew is considered essential for core software which macOS doesn't ship natively, but which are necessary for your work. 
 
