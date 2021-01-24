@@ -113,7 +113,7 @@ This guide will be using **terminal** for all installations. Let's open terminal
 
 Homebrew is a _package manager_ for macOS. Most core software you will need for the Unix dev environment is installed via Homebrew.
 
-<details><summary>🔍 Learn More</summary><br>
+<details><summary>Learn More 🔍</summary><br>
 
 Homebrew is a package manager, meaning, it provides software packages and can handle safe updating and uninstalling as needed. Homebrew is considered essential for core software which macOS doesn't ship natively, but which are necessary for your work. 
 
@@ -123,20 +123,23 @@ Homebrew utilizes the `brew` command in terminal.
 
 </details><br>
 
-
 **STEP 1.** Copy and paste the following script into your terminal.
 
 ```shell
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-**STEP 2.** Enter your password. As you type, your cursor will not move and your typing won't be visible– simply type your full password and hit enter.
+**STEP 2.** Enter your password. 
 
-**SUCCESS MESSAGE.** Once Homebrew installs, you'll receive 
+> ⚠️ As you type, your cursor will not move and your typing won't be visible– simply type your full password and hit enter.
 
-**POTENTIAL ERRORS.** Few errors should happen at this stage. 
+**STEP 3.** Once finished, review the response you received.
 
+> ⚠️ While Homebrew is still installing, you won't be able to see your bash command line prompt. 
 
+✅ **SUCCESS.** If Homebrew was successfully installed, you will see a large message that begins with `==> Installation successful!`.
+
+❗ **ERROR.** It's highly unlikely that this will error out.
 
 <br>
 
