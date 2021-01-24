@@ -96,6 +96,8 @@ This guide will be using **terminal** for all installations. Let's open terminal
 
 <br>
 
+***
+
 ### Your Core Package Manager
 
 <img align="right" width="300" src="https://imgur.com/CDY3Eeu.png">
@@ -136,9 +138,11 @@ Homebrew utilizes the `brew` command in terminal.
 
 <br>
 
-🔼 [back to top] 
+[back to top] 🔼  
 
 <br>
+
+***
 
 ### Your Terminal Shell
 
@@ -148,10 +152,11 @@ Homebrew utilizes the `brew` command in terminal.
 
 <br>
 
-🔼 [back to top] 
+[back to top] 🔼  
 
 <br>
 
+***
 ### Your Version Control Manager
 
 #### Git
@@ -168,10 +173,11 @@ Homebrew utilizes the `brew` command in terminal.
 
 <br>
 
-🔼 [back to top] 
+[back to top] 🔼  
 
 <br>
 
+***
 ### Your Frontend Scripting Languages
 
 #### NVM
@@ -186,9 +192,11 @@ Homebrew utilizes the `brew` command in terminal.
 
 <br>
 
-🔼 [back to top] 
+[back to top] 🔼  
 
 <br>
+
+***
 
 ### Your Database Management Programs
 
@@ -198,9 +206,11 @@ Homebrew utilizes the `brew` command in terminal.
 
 <br>
 
-🔼 [back to top] 
+[back to top] 🔼  
 
 <br>
+
+***
 
 ### Your Backend Scripting Languages
 
@@ -218,9 +228,11 @@ Homebrew utilizes the `brew` command in terminal.
 
 <br>
 
-🔼 [back to top] 
+[back to top] 🔼  
 
 <br>
+
+***
 
 ### Your GUI Applications
 
@@ -232,7 +244,7 @@ Homebrew utilizes the `brew` command in terminal.
 
 <br>
 
-🔼 [back to top] 
+[back to top] 🔼  
 
 <br>
 
@@ -248,9 +260,11 @@ Homebrew utilizes the `brew` command in terminal.
 
 <br>
 
-🔼 [back to top] 
+[back to top] 🔼  
 
 <br>
+
+***
 
 ### Your Browser Environment
 
@@ -264,9 +278,11 @@ Homebrew utilizes the `brew` command in terminal.
 
 <br>
 
-🔼 [back to top] 
+[back to top] 🔼  
 
 <br>
+
+***
 
 ### Your Coding Environment
 
@@ -282,7 +298,7 @@ Homebrew utilizes the `brew` command in terminal.
 
 <br>
 
-🔼 [back to top] 
+[back to top] 🔼  
 
 <br>
 
