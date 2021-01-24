@@ -2,6 +2,8 @@
 
 **An extremely thorough guide to setting up a powerful software engineering Unix environment.**
 
+<br>
+
 > ⚠️ **This guide is written for non-M1 chip Unix computers, and tested on macOS Big Sur**. If you are on an M1 chip MacBook, please consult the [M1 Version]; if you are on Linux, please consult my [Linux Version]. If you are unsure, please consult my [Guide to Determining Your Environment].
 
 <br>
@@ -299,4 +301,4 @@ Homebrew utilizes the `brew` command in terminal.
 [Brew GitHub]: https://github.com/Homebrew/
 [Brew Issue Tickets]: https://github.com/Homebrew/brew/issues
 
-[back to top]: #table-of-contents
+[back to top]: #table-of-contents-
