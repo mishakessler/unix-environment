@@ -49,6 +49,10 @@
 
 <br>
 
+***
+
+<br>
+
 ## OVERVIEW
 
 This guide covers the core technologies your computer will need for a **powerful** software engineering and web dev environment. The guide includes "detail" drop-downs like the following:
@@ -59,12 +63,15 @@ I will use these dropdowns to keep the guide relatively clean and focused on ins
 
 Emoji Key: 
 
-- 🔍 Learn More
+- 🔎 Learn More
 - ⚠️ Warnings
 - ❗ Errors
-- ✅ Successes
 
 </details><br>
+
+***
+
+<br>
 
 ### Some Tips Before You Start
 
@@ -90,6 +97,11 @@ Let's dive in!
 
 <br>
 
+***
+***
+
+<br>
+
 ## INSTALLATIONS
 
 This guide will be using **terminal** for all installations. Let's open terminal and get started!
@@ -97,6 +109,8 @@ This guide will be using **terminal** for all installations. Let's open terminal
 <br>
 
 ***
+
+<br>
 
 ### Your Core Package Manager
 
@@ -132,17 +146,17 @@ Homebrew utilizes the `brew` command in terminal.
 
 > ⚠️ While Homebrew is still installing, you won't be able to see your bash command line prompt. 
 
-✅ **SUCCESS.** If Homebrew was successfully installed, you will see a large message that begins with `==> Installation successful!`.
+**SUCCESS.** If Homebrew was successfully installed, you will see a large message that begins with `==> Installation successful!`.
 
-❗ **ERROR.** It's highly unlikely that this will error out.
+> ❗ It's highly unlikely that this will error out.
 
 <br>
 
 [back to top] 🔼  
 
-<br>
-
 ***
+
+<br>
 
 ### Your Terminal Shell
 
@@ -153,8 +167,6 @@ Homebrew utilizes the `brew` command in terminal.
 <br>
 
 [back to top] 🔼  
-
-<br>
 
 ***
 ### Your Version Control Manager
@@ -175,8 +187,6 @@ Homebrew utilizes the `brew` command in terminal.
 
 [back to top] 🔼  
 
-<br>
-
 ***
 ### Your Frontend Scripting Languages
 
@@ -194,9 +204,9 @@ Homebrew utilizes the `brew` command in terminal.
 
 [back to top] 🔼  
 
-<br>
-
 ***
+
+<br>
 
 ### Your Database Management Programs
 
@@ -208,9 +218,9 @@ Homebrew utilizes the `brew` command in terminal.
 
 [back to top] 🔼  
 
-<br>
-
 ***
+
+<br>
 
 ### Your Backend Scripting Languages
 
@@ -230,9 +240,9 @@ Homebrew utilizes the `brew` command in terminal.
 
 [back to top] 🔼  
 
-<br>
-
 ***
+
+<br>
 
 ### Your GUI Applications
 
@@ -246,11 +256,19 @@ Homebrew utilizes the `brew` command in terminal.
 
 [back to top] 🔼  
 
+
+***
+***
+
+<br>
+
+## CUSTOMIZATIONS
+
 <br>
 
 ***
 
-## CUSTOMIZATIONS
+<br>
 
 ### Your macOS Environment
 
@@ -262,9 +280,9 @@ Homebrew utilizes the `brew` command in terminal.
 
 [back to top] 🔼  
 
-<br>
-
 ***
+
+<br>
 
 ### Your Browser Environment
 
@@ -280,9 +298,9 @@ Homebrew utilizes the `brew` command in terminal.
 
 [back to top] 🔼  
 
-<br>
-
 ***
+
+<br>
 
 ### Your Coding Environment
 
@@ -299,8 +317,6 @@ Homebrew utilizes the `brew` command in terminal.
 <br>
 
 [back to top] 🔼  
-
-<br>
 
 ***
 
