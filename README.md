@@ -4,7 +4,7 @@
 
 <br>
 
-> ⚠️ **This guide is written for non-M1 chip Unix computers, and tested on macOS Big Sur**. If you are on an M1 chip MacBook, please consult the [M1 Version]; if you are on Linux, please consult my [Linux Version]. If you are unsure, please consult my [Guide to Determining Your Environment].
+> ⚠️ **This guide is written for non-M1 chip Unix computers, and tested on macOS Big Sur**. If you are on an M1 chip MacBook, please consult the [M1 Version (Coming Soon)]; if you are on Linux, please consult my [Linux Version (Coming Soon)]. If you are unsure, please consult my [Guide to Determining Your Environment (Coming Soon)].
 
 <br>
 
@@ -14,7 +14,7 @@
   - [Some Tips Before You Start](#some-tips-before-you-start)
 - [INSTALLATIONS](#installations)
   - [Your Core Package Manager](#your-core-package-manager)
-    - [Homebrew](#homebrew)
+    - [**Homebrew**](#homebrew)
   - [Your Terminal Shell](#your-terminal-shell)
     - [Zsh](#zsh)
     - [Oh-My-Zsh](#oh-my-zsh)
@@ -40,12 +40,16 @@
 - [CUSTOMIZATIONS](#customizations)
   - [Your macOS Environment](#your-macos-environment)
     - [macOS Plugins](#macos-plugins)
-  - [Your Browser Environment](#your-browser-environment)
-    - [Google Chrome Extensions](#google-chrome-extensions)
+  - [Your Shell Environment](#your-shell-environment)
+    - [Terminal Settings](#terminal-settings)
+    - [Oh-My-Zsh Plugins](#oh-my-zsh-plugins)
+    - [Oh-My-Zsh Themes](#oh-my-zsh-themes)
   - [Your Coding Environment](#your-coding-environment)
     - [VSCode Settings](#vscode-settings)
     - [VSCode Extensions](#vscode-extensions)
     - [VSCode Themes](#vscode-themes)
+  - [Your Browser Environment](#your-browser-environment)
+    - [Google Chrome Extensions](#google-chrome-extensions)
 
 <br>
 
@@ -55,39 +59,36 @@
 
 ## OVERVIEW
 
-This guide covers the core technologies your computer will need for a **powerful** software engineering and web dev environment. The guide includes "detail" drop-downs like the following:
+This guide covers the core technologies your computer will need for a **powerful** software engineering and web dev environment; I'm including "detail" drop-downs like the following:
 
 <details><summary>Click Me!</summary><br>
 
-I will use these dropdowns to keep the guide relatively clean and focused on installation steps, but to still include important context about what is happening with each download. 
+I will use these dropdowns to keep the guide relatively clean and focused, but to still include important details and context about what is happening with each download; I've used this **emoji key** to help with visual indicators:
 
-Emoji Key: 
-
-- 🔎 Learn More
-- ⚠️ Warnings
-- ❗ Errors
+- **View Installation Steps 📋** – Self-explanatory.
+- **Learn More 🔎** – More information on the software and its purpose.
+- **Warning ⚠️** – Warnings to avoid common mistakes.
+- **Common Errors ❗** – Common errors and how to resolve them.
 
 </details><br>
-
-***
 
 <br>
 
 ### Some Tips Before You Start
 
-Finally, before you start, I heavily recommend three things:
+Finally, before you start, I **heavily** recommend three things:
 
-#### Familiarize Yourself With The Tools of the Trade <!-- omit in toc -->
+#### 1) Familiarize Yourself With The Tools of the Trade <!-- omit in toc -->
 
 If you're _brand_ new to software engineering, or if you aren't particularly comfortable with your computer, including the command line interface, please review the guide to [Tools of the Trade]. Even for experienced engineers, **focusing on these more basic tools can significantly level up one's coding prowess and productivity**.
 
-#### Practice Researching Anything & Everything <!-- omit in toc -->
+#### 2) Practice Researching Anything & Everything <!-- omit in toc -->
 
 With the vast complexities of software engineering, it is simply impossible to know and memorize **everything** you will need on a daily basis. Get used to researching and confirming small details that will make a huge differences. 
 
 In this spirit, open up the [Glossary] in a new tab so you can reference it at any time during setup. If you're unsure or confused about the technologies or concepts I reference, just hop over to the Glossary and look it up.
 
-#### Be Thorough & Methodical <!-- omit in toc -->
+#### 3) Be Thorough & Methodical <!-- omit in toc -->
 
 Finally, and perhaps most importantly, you **must** use methodical, step-by-step attention to detail. This is integral to a career in software engineering, but especially when setting up your environment, **doing these steps out of order can have long-lasting, code-breaking implications**.
 
@@ -108,6 +109,8 @@ This guide will be using **terminal** for all installations. Let's open terminal
 
 <br>
 
+[back to top ⤴️]
+
 ***
 
 <br>
@@ -116,7 +119,7 @@ This guide will be using **terminal** for all installations. Let's open terminal
 
 <img align="right" width="300" src="https://imgur.com/CDY3Eeu.png">
 
-#### Homebrew 
+#### **Homebrew**
 
 [Brew Website] | [Brew Documentation] | [Brew GitHub] | [Brew Issue Tickets]
 
@@ -131,6 +134,8 @@ Homebrew packages are divided into **formulae**, **casks**, **taps**, or **bottl
 Homebrew utilizes the `brew` command in terminal. 
 
 </details><br>
+
+<details><summary>View Installation Steps 📋</summary><br>
 
 **STEP 1.** Copy and paste the following script into your terminal.
 
@@ -150,9 +155,11 @@ Homebrew utilizes the `brew` command in terminal.
 
 > ❗ It's highly unlikely that this will error out.
 
+</details><br>
+
 <br>
 
-[back to top] 🔼  
+[back to top ⤴️]
 
 ***
 
@@ -166,7 +173,7 @@ Homebrew utilizes the `brew` command in terminal.
 
 <br>
 
-[back to top] 🔼  
+[back to top ⤴️]
 
 ***
 ### Your Version Control Manager
@@ -185,7 +192,7 @@ Homebrew utilizes the `brew` command in terminal.
 
 <br>
 
-[back to top] 🔼  
+[back to top ⤴️]
 
 ***
 ### Your Frontend Scripting Languages
@@ -202,7 +209,7 @@ Homebrew utilizes the `brew` command in terminal.
 
 <br>
 
-[back to top] 🔼  
+[back to top ⤴️]
 
 ***
 
@@ -216,7 +223,7 @@ Homebrew utilizes the `brew` command in terminal.
 
 <br>
 
-[back to top] 🔼  
+[back to top ⤴️]
 
 ***
 
@@ -238,7 +245,7 @@ Homebrew utilizes the `brew` command in terminal.
 
 <br>
 
-[back to top] 🔼  
+[back to top ⤴️]
 
 ***
 
@@ -254,7 +261,7 @@ Homebrew utilizes the `brew` command in terminal.
 
 <br>
 
-[back to top] 🔼  
+[back to top ⤴️]
 
 
 ***
@@ -278,7 +285,47 @@ Homebrew utilizes the `brew` command in terminal.
 
 <br>
 
-[back to top] 🔼  
+[back to top ⤴️]
+
+***
+
+<br>
+
+### Your Shell Environment
+
+#### Terminal Settings
+
+#### Oh-My-Zsh Plugins
+
+#### Oh-My-Zsh Themes
+
+<br>
+
+[back to top ⤴️]
+
+***
+
+<br>
+
+### Your Coding Environment
+
+#### VSCode Settings
+
+#### VSCode Extensions
+
+##### Bracket Pair Colorizer <!-- omit in toc -->
+
+##### Indent Rainbow<!-- omit in toc -->
+
+#### VSCode Themes
+
+##### Color Themes <!-- omit in toc -->
+
+##### Icon Themes <!-- omit in toc -->
+
+<br>
+
+[back to top ⤴️]
 
 ***
 
@@ -296,27 +343,7 @@ Homebrew utilizes the `brew` command in terminal.
 
 <br>
 
-[back to top] 🔼  
-
-***
-
-<br>
-
-### Your Coding Environment
-
-#### VSCode Settings
-
-#### VSCode Extensions
-
-#### VSCode Themes
-
-##### Color Theme <!-- omit in toc -->
-
-##### Icon Theme <!-- omit in toc -->
-
-<br>
-
-[back to top] 🔼  
+[back to top ⤴️]
 
 ***
 
@@ -333,4 +360,4 @@ Homebrew utilizes the `brew` command in terminal.
 [Brew GitHub]: https://github.com/Homebrew/
 [Brew Issue Tickets]: https://github.com/Homebrew/brew/issues
 
-[back to top]: #table-of-contents-
+[back to top ⤴️]: #table-of-contents-
