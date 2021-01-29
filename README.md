@@ -4,7 +4,7 @@
 
 <br>
 
-> ⚠️ **This guide is written for non-M1 chip Unix computers, and tested on macOS Big Sur**. If you are on an M1 chip MacBook, please consult the [M1 Version (Coming Soon)]; if you are on Linux, please consult my [Linux Version (Coming Soon)]. If you are unsure, please consult my [Guide to Determining Your Environment (Coming Soon)].
+> ⚠️ **This guide is written for non-M1 chip Unix computers, and tested on macOS Big Sur**. If you are on an M1 chip MacBook, please consult the [M1 Version] (Coming Soon); if you are on Linux, please consult my [Linux Version] (Coming Soon). If you are unsure, please consult my [Guide to Determining Your Environment] (Coming Soon).
 
 <br>
 
@@ -133,7 +133,7 @@ Homebrew packages are divided into **formulae**, **casks**, **taps**, or **bottl
 
 Homebrew utilizes the `brew` command in terminal. 
 
-</details><br>
+</details>
 
 <details><summary>View Installation Steps 📋</summary><br>
 
@@ -153,9 +153,13 @@ Homebrew utilizes the `brew` command in terminal.
 
 **SUCCESS.** If Homebrew was successfully installed, you will see a large message that begins with `==> Installation successful!`.
 
-> ❗ It's highly unlikely that this will error out.
+</details>
 
-</details><br>
+<details><summary>Common Errors ❗</summary><br>
+
+It's highly unlikely that this will error out. Even if it's already installed, Homebrew will take the opportunity to install a clean version and update any outdated dependencies.
+
+</details>
 
 <br>
 
