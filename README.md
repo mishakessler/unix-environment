@@ -14,7 +14,7 @@
   - [Some Tips Before You Start](#some-tips-before-you-start)
 - [INSTALLATIONS](#installations)
   - [Your Core Package Manager](#your-core-package-manager)
-    - [**Homebrew**](#homebrew)
+    - [Homebrew](#homebrew)
   - [Your Terminal Shell](#your-terminal-shell)
     - [Zsh](#zsh)
     - [Oh My Zsh](#oh-my-zsh)
@@ -42,7 +42,8 @@
     - [macOS Plugins](#macos-plugins)
   - [Your Shell Environment](#your-shell-environment)
     - [Terminal Settings](#terminal-settings)
-    - [Oh My Zsh Plugins](#oh-my-zsh-plugins)
+    - [Zsh Plugins](#zsh-plugins)
+      - [Zsh Completions](#zsh-completions)
     - [Oh My Zsh Themes](#oh-my-zsh-themes)
   - [Your Coding Environment](#your-coding-environment)
     - [VSCode Settings](#vscode-settings)
@@ -121,7 +122,7 @@ Let's open terminal and get started!
 
 <img align="right" width="300" src="https://imgur.com/CDY3Eeu.png">
 
-#### **Homebrew**
+#### Homebrew
 
 [Brew Website] | [Brew Documentation] | [Brew GitHub] | [Brew Issue Tickets]
 
@@ -181,17 +182,19 @@ It's highly unlikely that this will error out. Even when it's already installed,
 
 ### Your Terminal Shell
 
+<img align="right" width="300" src="https://imgur.com/CDY3Eeu.png">
+
 #### Zsh
 
 [Zsh Website] | [Zsh Documentation] | [Zsh Users Project]
 
 Zsh, pronounced by the acronym Z-S-H, is a Unix _shell_ and command interpreter for shell scripting. It serves as a replacement for _Bash_, the default Unix Terminal shell.
-
+ 
 <details><summary>📋 View Installation Steps</summary><br>
 
 **STEP 1.** Copy and paste the following Homebrew command in your terminal.
 
-```shell
+```shell 
 brew install zsh
 ```
 
@@ -221,7 +224,7 @@ To reinstall <version>, run:
 
 [Oh My Zsh Website] | [Oh My Zsh Documentation] | [Oh My Zsh Github] | [Oh My Zsh Issue Tickets]
 
-Oh My Zsh is a community-driven framework for the Zsh shell. It helps us customize and configure our Z shell.
+Oh My Zsh is a community-driven framework for the Z shell. It helps us customize and configure our Z shell.
 
 <details><summary>📋 View Installation Steps</summary><br>
 
@@ -367,7 +370,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 #### Terminal Settings
 
-#### Oh My Zsh Plugins
+#### Zsh Plugins
+
+##### Zsh Completions
+
+
 
 #### Oh My Zsh Themes
 
