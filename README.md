@@ -13,7 +13,9 @@
 - [OVERVIEW](#overview)
   - [Some Tips Before You Start](#some-tips-before-you-start)
 - [INSTALLATIONS](#installations)
-  - [Your Core Package Manager](#your-core-package-manager)
+  - [Your Terminal Toolbox](#your-terminal-toolbox)
+    - [Command Line Tools](#command-line-tools)
+  - [Your Primary Package Manager](#your-primary-package-manager)
     - [Homebrew](#homebrew)
   - [Your Terminal Shell](#your-terminal-shell)
     - [Zsh](#zsh)
@@ -45,7 +47,7 @@
     - [Zsh Plugins](#zsh-plugins)
       - [Zsh Completions](#zsh-completions)
     - [Oh My Zsh Themes](#oh-my-zsh-themes)
-  - [Your Coding Environment](#your-coding-environment)
+  - [Your Integrated Development Environment](#your-integrated-development-environment)
     - [VSCode Settings](#vscode-settings)
     - [VSCode Extensions](#vscode-extensions)
     - [VSCode Themes](#vscode-themes)
@@ -118,7 +120,67 @@ Let's open terminal and get started!
 
 <br>
 
-### Your Core Package Manager
+### Your Terminal Toolbox
+
+<img align="right" width="300" src="">
+
+#### Command Line Tools
+
+[Command Line Tools Instructions] | [Command Line Tools Downloads] | [Xcode Documentation] | [Xcode Resources]
+
+Xcode is Apple's native Integrated Development Environment, or IDE. We won't be using Xcode, but we _will_ be using a subset of the Xcode app, called the _Command Line Tools_ package.
+
+> ⚠️ Warning: If you have the full Xcode suite installed already, skip to the Verify Installation steps.
+
+<details><summary>🔎 Learn More</summary><br>
+
+At over 12GB, Xcode is a beast of an IDE, and we just don't need to use up that disk space. Instead, we'll use Command Line Tools, which is a smaller package within Xcode. Command Line Tools includes the most commonly used utilities and compilers (_make_, _GNU compiler collection_, _perl_, _git_, etc.), and we will be needing these.
+
+In Terminal, Command Line Tools uses `xcode-select` command prefix.
+
+</details>
+
+<details><summary>📋 View Installation Steps</summary><br>
+
+**STEP 1.** Copy and paste the following script into your terminal.
+
+```shell
+xcode-select --install
+```
+
+**STEP 2.** Follow the UI prompt to install the Command Line Tools.
+
+</details>
+
+<details><summary>✅ Verify Installation</summary><br>
+
+To confirm installation, run the command `xcode-select -v`. The output should state `xcode-select version 2384` or higher.
+
+To confirm installation location, run the command `xcode-select -p`. The output should state `/Library/Developer/CommandLineTools`.
+
+</details>
+
+<details><summary>❗ Common Errors</summary><br>
+
+If Command Line Tools are already installed, you will receive `xcode-select: error: command line tools are already installed, use "Software Update" to install updates`.
+
+If Command Line Tools is installed at the wrong path, try running the following command to reset the path location.
+
+```shell
+xcode-select -r
+```
+
+</details>
+
+<br>
+
+[back to top ⤴️]
+
+***
+
+<br>
+
+### Your Primary Package Manager
 
 <img align="right" width="300" src="https://imgur.com/CDY3Eeu.png">
 
@@ -136,7 +198,7 @@ Homebrew packages are divided into **formulae**, **casks**, **taps**, or **bottl
 
 _Formulae_ installations handle softwares that you'll only interact with through the terminal– meaning, software that doesn't have an "App" interface in the GUI, such as Node. _Cask_ installations, on the other hand, are softwares that you interact with in your GUI, such as the Chrome internet browser.
 
-In terminal, Homebrew utilizes the `brew install <formula name>` command; if you're installing a cask, you use the `brew install --cask <cask name>` command and cask flag.
+In terminal, Homebrew utilizes the `brew` command prefix.
 
 </details>
 
@@ -198,13 +260,21 @@ Zsh, pronounced by the acronym Z-S-H, is a Unix _shell_ and command interpreter 
 brew install zsh
 ```
 
-**SUCCESS.** 
+**SUCCESS.** If Zsh was successfully installed, you will see a large message that begins with `==> Installation successful!`.
+
+**STEP 2.** Copy and paste the following script to make Zsh your default Terminal shell.
+
+```shell
+chsh -s /usr/local/bin/zsh
+```
 
 </details>
 
 <details><summary>✅ Verify Installation</summary><br>
 
-To confirm, run the command `zsh -v`. The output should be `zsh 5.8` or higher.
+To confirm installation, run the command `zsh -v`. The output should be `zsh 5.8` or higher.
+
+To confirm Zsh has been made your default shell, run `echo $SHELL`. The output should be `bin/zsh`.
 
 </details>
 
@@ -234,7 +304,7 @@ Oh My Zsh is a community-driven framework for the Z shell. It helps us customize
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-**SUCCESS.** 
+**SUCCESS.**
 
 </details>
 
@@ -251,6 +321,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 [back to top ⤴️]
 
 ***
+
 ### Your Version Control Manager
 
 #### Git
@@ -374,8 +445,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 ##### Zsh Completions
 
-
-
 #### Oh My Zsh Themes
 
 <br>
@@ -386,7 +455,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 <br>
 
-### Your Coding Environment
+### Your Integrated Development Environment
 
 #### VSCode Settings
 
@@ -433,6 +502,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 [Linux Version]: github.com/mishakessler/linux-environment
 [Tools of the Trade]: github.com/mishakessler/tools-of-the-trade
 [Glossary]: github.com/mishakessler/glossary
+
+[Command Line Tools Instructions]: https://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/
+[Command Line Tools Downloads]: https://developer.apple.com/download/more/?=command%20line%20tools
+[Xcode Documentation]: https://developer.apple.com/documentation/xcode/
+[Xcode Resources]: https://developer.apple.com/xcode/resources/
 
 [Brew Website]: https://brew.sh/
 [Brew Documentation]: https://docs.brew.sh/
