@@ -210,7 +210,7 @@ In terminal, Homebrew utilizes the `brew` command prefix.
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-**STEP 2.** Enter your password.
+**STEP 2.** If prompted, enter your Admin password. (This is the password you use when booting your computer and logging into your user account.)
 
 > ⚠️ Warning: As you type, your cursor will not move and your typing won't be visible– simply type your full password and hit enter.
 
@@ -218,13 +218,15 @@ In terminal, Homebrew utilizes the `brew` command prefix.
 
 > ⚠️ Warning: While Homebrew is still installing, you won't be able to see your bash command line prompt.
 
-**SUCCESS.** If Homebrew was successfully installed, you will see a large message that begins with `==> Installation successful!`.
+If Homebrew was successfully installed, you will see a large message that begins with `==> Installation successful!`.
 
 </details>
 
 <details><summary>✅ Verify Installation</summary><br>
 
 To confirm, run the command `brew -v`. The output should state `Homebrew 2.7.7` or higher.
+
+If this is not the case, view the next section, _Common Errors_.
 
 </details>
 
@@ -260,13 +262,17 @@ Zsh, pronounced by the acronym Z-S-H, is a Unix _shell_ and command interpreter 
 brew install zsh
 ```
 
-**SUCCESS.** If Zsh was successfully installed, you will see a large message that begins with `==> Installation successful!`.
+If Zsh was successfully installed, you will see a large message that begins with `==> Installation successful!`.
 
 **STEP 2.** Copy and paste the following script to make Zsh your default Terminal shell.
 
 ```shell
 chsh -s /usr/local/bin/zsh
 ```
+
+**STEP 3.** If prompted, enter your password.
+
+> ⚠️ Warning: As you type, your cursor will not move and your typing won't be visible– simply type your full password and hit enter.
 
 </details>
 
@@ -275,6 +281,8 @@ chsh -s /usr/local/bin/zsh
 To confirm installation, run the command `zsh -v`. The output should be `zsh 5.8` or higher.
 
 To confirm Zsh has been made your default shell, run `echo $SHELL`. The output should be `bin/zsh`.
+
+If this is not the case, view the next section, _Common Errors_.
 
 </details>
 
@@ -287,6 +295,8 @@ Warning: zsh <version> is already installed and up-to-date.
 To reinstall <version>, run:
   brew reinstall zsh
 ```
+
+If running `echo $SHELL` returned `bin/bash`, this means your default shell has not changed. First, try hard quitting your terminal. (Do not simply close the Terminal window. This doesn't quit the application. Use _command + Q_ to quit.) Once it has quit, reopen terminal and re-run `echo $SHELL`. This should fix the issue.
 
 </details>
 
@@ -325,6 +335,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ### Your Version Control Manager
 
 #### Git
+
+[Git Website] | [Git Documentation] | [Git Github]
+
+Git is a free, open-source version control system, meaning, it allows a distributed approach to collaboration on code and built-in tools for avoiding conflicting updates.
 
 #### Git Configurations
 
@@ -522,9 +536,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 [Oh My Zsh GitHub]: https://github.com/ohmyzsh/
 [Oh My Zsh Issue Tickets]: https://github.com/ohmyzsh/ohmyzsh/issues
 
-[Name Website]: 
-[Name Documentation]: 
-[Name GitHub]: 
-[Name Issue Tickets]: 
+[Git Website]: https://git-scm.com/
+[Git Documentation]: https://git-scm.com/doc
+[Git Github]: https://github.com/git/git
+
+
 
 [back to top ⤴️]: #table-of-contents-
