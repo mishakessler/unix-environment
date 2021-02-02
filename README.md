@@ -306,6 +306,8 @@ If running `echo $SHELL` returned `bin/bash`, this means your default shell has 
 
 </details>
 
+<br>
+
 #### Oh My Zsh
 
 [Oh My Zsh Website] | [Oh My Zsh Documentation] | [Oh My Zsh Github] | [Oh My Zsh Issue Tickets]
@@ -382,9 +384,13 @@ brew install git
 
 </details>
 
+<br>
+
 #### Git Configurations
 
 We're not done just yet with Git– in order for your computer to utilize your Git VCS correctly, including communicating and syncing with your cloud-based Git repositories, we **need** to set up certain Git _configurations_ for your _global environment_.
+
+<br>
 
 ##### Git Security Token <!-- omit in toc -->
 
@@ -399,6 +405,8 @@ For you to have full control over your Git repositories from your Terminal, we n
 **STEP 1.**
 
 </details>
+
+<br>
 
 ##### Git Author Information <!-- omit in toc -->
 
@@ -416,6 +424,8 @@ By default, your authorship name is the name of your macOS user account, and the
 
 </details>
 
+<br>
+
 ##### Git Branch Naming Convention <!-- omit in toc -->
 
 <details><summary>🔎 Learn More</summary><br>
@@ -427,6 +437,8 @@ By default, your authorship name is the name of your macOS user account, and the
 **STEP 1.**
 
 </details>
+
+<br>
 
 ##### Git Rebase Convention <!-- omit in toc -->
 
