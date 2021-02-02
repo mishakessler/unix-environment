@@ -120,9 +120,11 @@ Let's open terminal and get started!
 
 <br>
 
-### Your Terminal Toolbox
+<div align="center">
+<img src="assets/code-review.png" width="60%">
+</div>
 
-<img align="right" width="300" src="">
+### Your Terminal Toolbox
 
 #### Command Line Tools
 
@@ -180,9 +182,11 @@ xcode-select -r
 
 <br>
 
-### Your Primary Package Manager
+<div align="center">
+<img src="assets/packages.png" width="60%">
+</div>
 
-<img align="right" width="300" src="https://imgur.com/CDY3Eeu.png">
+### Your Primary Package Manager
 
 #### Homebrew
 
@@ -244,9 +248,11 @@ It's highly unlikely that this will error out. Even when it's already installed,
 
 <br>
 
-### Your Terminal Shell
+<div align="center">
+<img src="assets/programmer.png" width="60%">
+</div>
 
-<img align="right" width="300" src="https://imgur.com/CDY3Eeu.png">
+### Your Terminal Shell
 
 #### Zsh
 
@@ -314,8 +320,6 @@ Oh My Zsh is a community-driven framework for the Z shell. It helps us customize
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-**SUCCESS.**
-
 </details>
 
 <details><summary>✅ Verify Installation</summary><br>
@@ -332,23 +336,109 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 ***
 
+<div align="center">
+<img src="assets/git.png" width="60%">
+</div>
+
 ### Your Version Control Manager
 
 #### Git
 
 [Git Website] | [Git Documentation] | [Git Github]
 
-Git is a free, open-source version control system, meaning, it allows a distributed approach to collaboration on code and built-in tools for avoiding conflicting updates.
+_Git_ is a free, open-source _version control system_– meaning, it allows teams to collaborate on code that's stored safely in cloud– and comes with built-in tools for avoiding code conflicts.
+
+<details><summary>🔎 Learn More</summary><br>
+
+Git version control is the **lifeblood** of the software engineer. It's almost universally used on all projects, and at all companies, because it's a lightweight, open-source, cloud-based approach to collaborative- yet conflict-free- coding.
+
+Note, _Git_ is not the same as _GitHub_– Git is the _version control system_, whereas GitHub is one of many (and easily the most popular) Git-based project hosting websites. 
+
+(A comparable analogy is an _Img_ file and the _Imgur_ website– Imgur hosts images, but an _Img_ and _Imgur_ are very different things.)
+
+</details>
+
+<details><summary>📋 View Installation Steps</summary><br>
+
+**STEP 1.** Copy and paste the following Homebrew command in your terminal:
+
+```shell
+brew install git
+```
+
+> ⚠️ Warning: Like before, any `brew` command may take an opportunity to upgrade Homebrew dependencies before actually installing the software you've requested– that's all to say, don't worry if a lot seems to be happening when you run a `brew` command.
+
+
+
+</details>
+
+<details><summary>✅ Verify Installation</summary><br>
+
+
+
+</details>
+
+<details><summary>❗ Common Errors</summary><br>
+
+</details>
 
 #### Git Configurations
 
+We're not done just yet with Git– in order for your computer to utilize your Git VCS correctly, including communicating and syncing with your cloud-based Git repositories, we **need** to set up certain Git _configurations_ for your _global environment_.
+
 ##### Git Security Token <!-- omit in toc -->
+
+<details><summary>🔎 Learn More</summary><br>
+
+For you to have full control over your Git repositories from your Terminal, we need to set up your GitHub username and password, and a security token, giving your Git-based commands the proper permissions to be executed.
+
+</details>
+
+<details><summary>📋 View Steps</summary><br>
+
+**STEP 1.**
+
+</details>
 
 ##### Git Author Information <!-- omit in toc -->
 
+<details><summary>🔎 Learn More</summary><br>
+
+For you to receive full "credit" for your work, your Git configuration includes your "author information", including your name and email address. Each time you make a commit to your Git repository, the commit actually includes this information on the commit details, and this enables GitHub to link and credit your commits to your GitHub profile.
+
+By default, your authorship name is the name of your macOS user account, and the email is often that name at your "local" email– for example, `misha@mishasmacbookpro.local`. Obviously, this needs to be updated.
+
+</details>
+
+<details><summary>📋 View Steps</summary><br>
+
+**STEP 1.**
+
+</details>
+
 ##### Git Branch Naming Convention <!-- omit in toc -->
 
+<details><summary>🔎 Learn More</summary><br>
+
+</details>
+
+<details><summary>📋 View Steps</summary><br>
+
+**STEP 1.**
+
+</details>
+
 ##### Git Rebase Convention <!-- omit in toc -->
+
+<details><summary>🔎 Learn More</summary><br>
+
+</details>
+
+<details><summary>📋 View Steps</summary><br>
+
+**STEP 1.**
+
+</details>
 
 <br>
 
@@ -517,11 +607,13 @@ Git is a free, open-source version control system, meaning, it allows a distribu
 [Tools of the Trade]: github.com/mishakessler/tools-of-the-trade
 [Glossary]: github.com/mishakessler/glossary
 
+[Terminal Tools]: ./assets/code-review.png
 [Command Line Tools Instructions]: https://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/
 [Command Line Tools Downloads]: https://developer.apple.com/download/more/?=command%20line%20tools
 [Xcode Documentation]: https://developer.apple.com/documentation/xcode/
 [Xcode Resources]: https://developer.apple.com/xcode/resources/
 
+[Packages]: ./assets/packages.png
 [Brew Website]: https://brew.sh/
 [Brew Documentation]: https://docs.brew.sh/
 [Brew GitHub]: https://github.com/Homebrew/
