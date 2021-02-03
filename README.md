@@ -34,7 +34,29 @@
 
 ## OVERVIEW
 
-This guide covers the core technologies your computer will need for a **powerful** software engineering and web dev environment; I'm including "detail" drop-downs like the following:
+This guide covers the core technologies your computer will need for a **powerful** software engineering and web dev environment. Briefly let's overview all of the installations:
+
+- [Your Terminal Toolbox], [Command Line Tools];
+- [Your Primary Package Manager], [Homebrew];
+- [Your Terminal Shell], [Zsh], and the [Oh My Zsh] framework;
+- [Your Version Control Manager], [Git], and the necessary [Git Configurations];
+- [Your Frontend Scripting Language], [Node.js], and the necessary version manager, [NVM], and package manager, [NPM];
+- [Your Database Management Programs], [PostgreSQL] and [MongoDB];
+- [Your Backend Scripting Language], [Ruby], and the necessary version manager, [Rbenv], and some packages, [Ruby Gems]; and
+- [Your GUI Applications].
+
+<br>
+
+In addition to these installations, I'll also be providing some customizations that will help you make the most of your coding environment, including:
+
+- [Your macOS Environment], including [macOS Plugins];
+- [Your Shell Environment], including [Terminal Settings], [Zsh Plugins], and [Oh My Zsh Themes];
+- [Your Integrated Development Environment], including [VSCode Settings], [VSCode Extensions], and [VSCode Themes]; and finally,
+- [Your Browser Environment], namely, [Google Chrome Extensions].
+
+<br>
+
+Lastly, I'm including "detail" drop-downs like the following:
 
 <details><summary>Click Me!</summary><br>
 
@@ -84,26 +106,7 @@ This guide will be using **terminal** for all installations. One quick warning:
 
 > **⚠️ Warning**: While installing, **never** use the `sudo` command, unless specifically told to do so. `sudo`, meaning "Super User DO", will install software in a different file/folder location on your hard drive, causing issues in the future.
 
-With that out of the way, let's briefly cover all of our installations:
-
-- [Your Terminal Toolbox], [Command Line Tools];
-- [Your Primary Package Manager], [Homebrew];
-- [Your Terminal Shell], [Zsh], and the [Oh My Zsh] framework;
-- [Your Version Control Manager], [Git], and the necessary [Git Configurations];
-- [Your Frontend Scripting Language], [Node.js], and the necessary version manager, [NVM], and package manager, [NPM];
-- [Your Database Management Programs], [PostgreSQL] and [MongoDB];
-- [Your Backend Scripting Language], [Ruby], and the necessary version manager, [Rbenv], and some packages, [Ruby Gems]; and
-- [Your GUI Applications].
-
-In addition to these installations, I'll be providing some customizations that will help you make the most of your coding environment, including:
-
-- [Your macOS Environment], including [macOS Plugins];
-- [Your Shell Environment], including [Terminal Settings], [Zsh Plugins], and [Oh My Zsh Themes];
-- [Your Integrated Development Environment], including [VSCode Settings], [VSCode Extensions], and [VSCode Themes]; and finally,
-- [Your Browser Environment], namely, [Google Chrome Extensions].
-
-
-Ready to get started? Let's open terminal and get started!
+With that out of the way, ready to get started? Let's open your terminal!
 
 <br>
 
