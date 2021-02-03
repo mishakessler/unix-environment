@@ -1,4 +1,4 @@
-# Unix Environment Setup <!-- omit in toc -->
+# Unix Environment Setup
 
 **An extremely thorough guide to setting up a powerful software engineering Unix environment.**
 
@@ -8,51 +8,72 @@
 
 <br>
 
-## TABLE OF CONTENTS <!-- omit in toc -->
+## TABLE OF CONTENTS
 
-- [OVERVIEW](#overview)
-  - [Some Tips Before You Start](#some-tips-before-you-start)
-- [INSTALLATIONS](#installations)
-  - [Your Terminal Toolbox](#your-terminal-toolbox)
-    - [Command Line Tools](#command-line-tools)
-  - [Your Primary Package Manager](#your-primary-package-manager)
-    - [Homebrew](#homebrew)
-  - [Your Terminal Shell](#your-terminal-shell)
-    - [Zsh](#zsh)
-    - [Oh My Zsh](#oh-my-zsh)
-  - [Your Version Control Manager](#your-version-control-manager)
-    - [Git](#git)
-    - [Git Configurations](#git-configurations)
-  - [Your Frontend Scripting Languages](#your-frontend-scripting-languages)
-    - [NVM](#nvm)
-    - [Node.js](#nodejs)
-    - [NPM](#npm)
-    - [JavaScript Add-Ons](#javascript-add-ons)
-  - [Your Database Management Programs](#your-database-management-programs)
-    - [PostgreSQL](#postgresql)
-    - [MongoDB](#mongodb)
-  - [Your Backend Scripting Languages](#your-backend-scripting-languages)
-    - [Rbenv](#rbenv)
-    - [Ruby](#ruby)
-    - [Ruby Gems](#ruby-gems)
-  - [Your GUI Applications](#your-gui-applications)
-    - [Google Chrome](#google-chrome)
-    - [Visual Studio Code](#visual-studio-code)
-    - [PostMan](#postman)
-- [CUSTOMIZATIONS](#customizations)
-  - [Your macOS Environment](#your-macos-environment)
-    - [macOS Plugins](#macos-plugins)
-  - [Your Shell Environment](#your-shell-environment)
-    - [Terminal Settings](#terminal-settings)
-    - [Zsh Plugins](#zsh-plugins)
-      - [Zsh Completions](#zsh-completions)
-    - [Oh My Zsh Themes](#oh-my-zsh-themes)
-  - [Your Integrated Development Environment](#your-integrated-development-environment)
-    - [VSCode Settings](#vscode-settings)
-    - [VSCode Extensions](#vscode-extensions)
-    - [VSCode Themes](#vscode-themes)
-  - [Your Browser Environment](#your-browser-environment)
-    - [Google Chrome Extensions](#google-chrome-extensions)
+- [Unix Environment Setup](#unix-environment-setup)
+  - [TABLE OF CONTENTS](#table-of-contents)
+  - [OVERVIEW](#overview)
+    - [Some Tips Before You Start](#some-tips-before-you-start)
+      - [1) Familiarize Yourself With The Tools of the Trade](#1-familiarize-yourself-with-the-tools-of-the-trade)
+      - [2) Practice Researching Anything & Everything](#2-practice-researching-anything--everything)
+      - [3) Be Thorough & Methodical](#3-be-thorough--methodical)
+  - [INSTALLATIONS](#installations)
+    - [Your Terminal Toolbox](#your-terminal-toolbox)
+      - [Command Line Tools](#command-line-tools)
+    - [Your Primary Package Manager](#your-primary-package-manager)
+      - [Homebrew](#homebrew)
+    - [Your Terminal Shell](#your-terminal-shell)
+      - [Zsh](#zsh)
+      - [Oh My Zsh](#oh-my-zsh)
+    - [Your Version Control Manager](#your-version-control-manager)
+      - [Git](#git)
+      - [Git Configurations](#git-configurations)
+        - [Git Security Token](#git-security-token)
+        - [Git Author Information](#git-author-information)
+        - [Git Branch Naming Convention](#git-branch-naming-convention)
+        - [Git Rebase Convention](#git-rebase-convention)
+    - [Your Frontend Scripting Language](#your-frontend-scripting-language)
+      - [NVM](#nvm)
+      - [Node.js](#nodejs)
+      - [NPM](#npm)
+      - [JavaScript Add-Ons](#javascript-add-ons)
+        - [TypeScript](#typescript)
+    - [Your Database Management Programs](#your-database-management-programs)
+      - [PostgreSQL](#postgresql)
+      - [MongoDB](#mongodb)
+    - [Your Backend Scripting Language](#your-backend-scripting-language)
+      - [Rbenv](#rbenv)
+      - [Ruby](#ruby)
+      - [Ruby Gems](#ruby-gems)
+        - [Pry](#pry)
+        - [Rspec](#rspec)
+        - [Rails](#rails)
+    - [Your GUI Applications](#your-gui-applications)
+      - [Google Chrome](#google-chrome)
+      - [iTerm2](#iterm2)
+      - [Visual Studio Code](#visual-studio-code)
+      - [PostMan](#postman)
+  - [CUSTOMIZATIONS](#customizations)
+    - [Your macOS Environment](#your-macos-environment)
+      - [macOS Plugins](#macos-plugins)
+        - [Magnet](#magnet)
+    - [Your Shell Environment](#your-shell-environment)
+      - [Terminal Settings](#terminal-settings)
+      - [Zsh Plugins](#zsh-plugins)
+        - [Zsh Completions](#zsh-completions)
+      - [Oh My Zsh Themes](#oh-my-zsh-themes)
+    - [Your Integrated Development Environment](#your-integrated-development-environment)
+      - [VSCode Settings](#vscode-settings)
+      - [VSCode Extensions](#vscode-extensions)
+        - [Bracket Pair Colorizer](#bracket-pair-colorizer)
+      - [VSCode Themes](#vscode-themes)
+        - [Color Themes](#color-themes)
+        - [Icon Themes](#icon-themes)
+    - [Your Browser Environment](#your-browser-environment)
+      - [Google Chrome Extensions](#google-chrome-extensions)
+        - [React Dev Tools](#react-dev-tools)
+        - [Color Picker](#color-picker)
+        - [JSON Viewer](#json-viewer)
 
 <br>
 
@@ -81,17 +102,17 @@ I will use these dropdowns to keep the guide relatively clean and focused, but t
 
 Before you start, I **heavily** recommend three things:
 
-#### 1) Familiarize Yourself With The Tools of the Trade <!-- omit in toc -->
+#### 1) Familiarize Yourself With The Tools of the Trade
 
 If you're _brand_ new to software engineering, or if you aren't particularly comfortable with your computer, including the command line interface, please review the guide to [Tools of the Trade]. Even for experienced engineers, **focusing on these more basic tools can significantly level up one's coding prowess and productivity**.
 
-#### 2) Practice Researching Anything & Everything <!-- omit in toc -->
+#### 2) Practice Researching Anything & Everything
 
 With the vast complexities of software engineering, it is simply impossible to know and memorize **everything** you will need on a daily basis. Get used to researching and confirming small details that will make a huge differences. 
 
 In this spirit, open up the [Glossary] in a new tab so you can reference it at any time during setup. If you're unsure or confused about the technologies or concepts I reference, just hop over to the Glossary and look it up.
 
-#### 3) Be Thorough & Methodical <!-- omit in toc -->
+#### 3) Be Thorough & Methodical
 
 Finally, and perhaps most importantly, you **must** use methodical, step-by-step attention to detail. This is integral to a career in software engineering, but especially when setting up your environment, **doing these steps out of order can have long-lasting, code-breaking implications**.
 
@@ -112,7 +133,26 @@ This guide will be using **terminal** for all installations. One quick warning:
 
 > **⚠️ Warning**: While installing, **never** use the `sudo` command, unless specifically told to do so. `sudo`, meaning "Super User DO", will install software in a different file/folder location on your hard drive, causing issues in the future.
 
-Let's open terminal and get started!
+With that out of the way, let's briefly cover all of our installations:
+
+- [Your Terminal Toolbox], [Command Line Tools];
+- [Your Primary Package Manager], [Homebrew];
+- [Your Terminal Shell], [Zsh], and the [Oh My Zsh] framework;
+- [Your Version Control Manager], [Git], and the necessary [Git Configurations];
+- [Your Frontend Scripting Language], [Node.js], and the necessary version manager, [NVM], and package manager, [NPM];
+- [Your Database Management Programs], [PostgreSQL] and [MongoDB];
+- [Your Backend Scripting Language], [Ruby], and the necessary version manager, [Rbenv], and some packages, [Ruby Gems]; and
+- [Your GUI Applications].
+
+In addition to these installations, I'll be providing some customizations that will help you make the most of your coding environment, including:
+
+- [Your macOS Environment], including [macOS Plugins];
+- [Your Shell Environment], including [Terminal Settings], [Zsh Plugins], and [Oh My Zsh Themes];
+- [Your Integrated Development Environment], including [VSCode Settings], [VSCode Extensions], and [VSCode Themes]; and finally,
+- [Your Browser Environment], namely, [Google Chrome Extensions].
+
+
+Ready to get started? Let's open terminal and get started!
 
 <br>
 
@@ -392,7 +432,7 @@ We're not done just yet with Git– in order for your computer to utilize your 
 
 <br>
 
-##### Git Security Token <!-- omit in toc -->
+##### Git Security Token
 
 <details><summary>🔎 Learn More</summary><br>
 
@@ -408,7 +448,7 @@ For you to have full control over your Git repositories from your Terminal, we n
 
 <br>
 
-##### Git Author Information <!-- omit in toc -->
+##### Git Author Information
 
 <details><summary>🔎 Learn More</summary><br>
 
@@ -426,7 +466,7 @@ By default, your authorship name is the name of your macOS user account, and the
 
 <br>
 
-##### Git Branch Naming Convention <!-- omit in toc -->
+##### Git Branch Naming Convention
 
 <details><summary>🔎 Learn More</summary><br>
 
@@ -440,7 +480,7 @@ By default, your authorship name is the name of your macOS user account, and the
 
 <br>
 
-##### Git Rebase Convention <!-- omit in toc -->
+##### Git Rebase Convention
 
 <details><summary>🔎 Learn More</summary><br>
 
@@ -457,7 +497,7 @@ By default, your authorship name is the name of your macOS user account, and the
 [back to top ⤴️]
 
 ***
-### Your Frontend Scripting Languages
+### Your Frontend Scripting Language
 
 #### NVM
 
@@ -465,9 +505,9 @@ By default, your authorship name is the name of your macOS user account, and the
 
 #### NPM
 
-#### JavaScript Add-Ons
+#### JavaScript Add-Ons 
 
-##### TypeScript <!-- omit in toc -->
+##### TypeScript
 
 <br>
 
@@ -491,7 +531,7 @@ By default, your authorship name is the name of your macOS user account, and the
 
 <br>
 
-### Your Backend Scripting Languages
+### Your Backend Scripting Language
 
 #### Rbenv
 
@@ -499,11 +539,11 @@ By default, your authorship name is the name of your macOS user account, and the
 
 #### Ruby Gems
 
-##### Pry <!-- omit in toc -->
+##### Pry
 
-##### Rspec <!-- omit in toc -->
+##### Rspec
 
-##### Rails <!-- omit in toc -->
+##### Rails
 
 <br>
 
@@ -516,6 +556,8 @@ By default, your authorship name is the name of your macOS user account, and the
 ### Your GUI Applications
 
 #### Google Chrome
+
+#### iTerm2
 
 #### Visual Studio Code
 
@@ -543,7 +585,7 @@ By default, your authorship name is the name of your macOS user account, and the
 
 #### macOS Plugins
 
-##### Magnet <!-- omit in toc -->
+##### Magnet
 
 <br>
 
@@ -577,15 +619,15 @@ By default, your authorship name is the name of your macOS user account, and the
 
 #### VSCode Extensions
 
-##### Bracket Pair Colorizer <!-- omit in toc -->
+##### Bracket Pair Colorizer
 
 ##### Indent Rainbow<!-- omit in toc -->
 
 #### VSCode Themes
 
-##### Color Themes <!-- omit in toc -->
+##### Color Themes
 
-##### Icon Themes <!-- omit in toc -->
+##### Icon Themes
 
 <br>
 
@@ -599,11 +641,11 @@ By default, your authorship name is the name of your macOS user account, and the
 
 #### Google Chrome Extensions
 
-##### React Dev Tools <!-- omit in toc -->
+##### React Dev Tools
 
-##### Color Picker <!-- omit in toc -->
+##### Color Picker
 
-##### JSON Viewer <!-- omit in toc -->
+##### JSON Viewer
 
 <br>
 
@@ -619,31 +661,84 @@ By default, your authorship name is the name of your macOS user account, and the
 [Tools of the Trade]: github.com/mishakessler/tools-of-the-trade
 [Glossary]: github.com/mishakessler/glossary
 
-[Terminal Tools]: ./assets/code-review.png
+[Your Terminal Toolbox]: #your-terminal-toolbox
+[Command Line Tools]: #command-line-tools-
 [Command Line Tools Instructions]: https://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/
 [Command Line Tools Downloads]: https://developer.apple.com/download/more/?=command%20line%20tools
 [Xcode Documentation]: https://developer.apple.com/documentation/xcode/
 [Xcode Resources]: https://developer.apple.com/xcode/resources/
 
-[Packages]: ./assets/packages.png
+[Your Primary Package Manager]: #your-primary-package-manager
+[Homebrew]: #homebrew-
 [Brew Website]: https://brew.sh/
 [Brew Documentation]: https://docs.brew.sh/
 [Brew GitHub]: https://github.com/Homebrew/
 [Brew Issue Tickets]: https://github.com/Homebrew/brew/issues
 
+[Your Terminal Shell]: #your-terminal-shell
+[Zsh]: #zsh-
 [Zsh Website]: http://zsh.sourceforge.net/
 [Zsh Documentation]: http://zsh.sourceforge.net/Doc/Release/zsh_toc.html
 [Zsh Users Project]: https://github.com/zsh-users
-
+[Oh My Zsh]: #oh-my-zsh-
 [Oh My Zsh Website]: https://ohmyz.sh/
 [Oh My Zsh Documentation]: https://docs.OhMyZsh.sh/
 [Oh My Zsh GitHub]: https://github.com/ohmyzsh/
 [Oh My Zsh Issue Tickets]: https://github.com/ohmyzsh/ohmyzsh/issues
 
+[Your Version Control Manager]: #your-version-control-manager
+[Git]: #git-
 [Git Website]: https://git-scm.com/
 [Git Documentation]: https://git-scm.com/doc
 [Git Github]: https://github.com/git/git
+[Git Configurations]: #git-configurations-
 
+[Your Frontend Scripting Language]: #your-frontend-scripting-language
+[NVM]: #nvm-
+[Node.js]: #nodejs-
+[NPM]: #npm-
+[JavaScript Add-Ons]: #javascript-add-ons-
+[TypeScript]: #typescript-
 
+[Your Database Management Programs]: #your-database-management-programs
+[PostgreSQL]: #postgresql-
+[MongoDB]: #mongodb-
+
+[Your Backend Scripting Language]: #your-backend-scripting-language
+[Rbenv]: #rbenv-
+[Ruby]: #ruby-
+[Ruby Gems]: #ruby-gems-
+[Pry]: #pry-
+[Rspec]: #rspec-
+[Rails]: #rails-
+
+[Your GUI Applications]: #your-gui-applications
+[Google Chrome]: #google-chrome-
+[Visual Studio Code]: #visual-studio-code-
+[PostMan]: #postman-
+
+[Your macOS Environment]: #your-macos-environment
+[macOS Plugins]: #macos-plugins-
+[Magnet]: #magnet-
+
+[Your Shell Environment]: #your-shell-environment
+[Terminal Settings]: #terminal-settings-
+[Zsh Plugins]: #zsh-plugins-
+[Zsh Completions]: #zsh-completions-
+[Oh My Zsh Themes]: #oh-my-zsh-themes-
+
+[Your Integrated Development Environment]: #your-integrated-development-environment
+[VSCode Settings]: #vscode-settings-
+[VSCode Extensions]: #vscode-extensions-
+[Bracket Pair Colorizer]: #bracket-pair-colorizer-
+[VSCode Themes]: #vscode-themes-
+[Color Themes]: #color-themes-
+[Icon Themes]: #icon-themes-
+
+[Your Browser Environment]: #your-browser-environment
+[Google Chrome Extensions]: #google-chrome-extensions-
+[React Dev Tools]: #react-dev-tools-
+[Color Picker]: #color-picker-
+[JSON Viewer]: #json-viewer-
 
 [back to top ⤴️]: #table-of-contents-
