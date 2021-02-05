@@ -241,7 +241,6 @@ It's highly unlikely that this will error out. Even when it's already installed,
 ***
 
 <br>
-
 <div align="center">
 <img src="assets/programmer.png" width="60%">
 </div>
@@ -332,6 +331,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 ***
 
+<br>
 <div align="center">
 <img src="assets/git.png" width="60%">
 </div>
@@ -451,6 +451,12 @@ By default, your authorship name is the name of your macOS user account, and the
 [back to top ⤴️]
 
 ***
+
+<br>
+<div align="center">
+<img src="assets/web-development.png" width="60%">
+</div>
+
 ### Your Frontend Scripting Language<!-- omit in toc -->
 
 #### NVM<!-- omit in toc -->
@@ -470,6 +476,9 @@ By default, your authorship name is the name of your macOS user account, and the
 ***
 
 <br>
+<div align="center">
+<img src="assets/server-cluster.png" width="60%">
+</div>
 
 ### Your Database Management Programs
 
@@ -484,6 +493,9 @@ By default, your authorship name is the name of your macOS user account, and the
 ***
 
 <br>
+<div align="center">
+<img src="assets/dev-productivity.png" width="60%">
+</div>
 
 ### Your Backend Scripting Language
 
@@ -506,6 +518,9 @@ By default, your authorship name is the name of your macOS user account, and the
 ***
 
 <br>
+<div align="center">
+<img src="assets/browsers.png" width="60%">
+</div>
 
 ### Your GUI Applications
 
@@ -534,6 +549,9 @@ By default, your authorship name is the name of your macOS user account, and the
 ***
 
 <br>
+<div align="center">
+<img src="assets/dev-productivity.png" width="60%">
+</div>
 
 ### Your macOS Environment
 
@@ -548,6 +566,9 @@ By default, your authorship name is the name of your macOS user account, and the
 ***
 
 <br>
+<div align="center">
+<img src="assets/design-font.png" width="60%">
+</div>
 
 ### Your Shell Environment
 
@@ -566,6 +587,9 @@ By default, your authorship name is the name of your macOS user account, and the
 ***
 
 <br>
+<div align="center">
+<img src="assets/noted.png" width="60%">
+</div>
 
 ### Your Integrated Development Environment
 
@@ -590,6 +614,9 @@ By default, your authorship name is the name of your macOS user account, and the
 ***
 
 <br>
+<div align="center">
+<img src="assets/pwa.png" width="60%">
+</div>
 
 ### Your Browser Environment
 
