@@ -338,6 +338,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 ### Your Version Control Manager
 
+<br>
+
 #### Git<!-- omit in toc -->
 
 [Git Website] | [Git Documentation] | [Git Github]
@@ -423,13 +425,9 @@ By default, your authorship name is the name of your macOS user account, and the
 ##### Git Branch Naming Convention<!-- omit in toc -->
 
 <details><summary>🔎 Learn More</summary><br>
-
 </details>
 
 <details><summary>📋 View Steps</summary><br>
-
-**STEP 1.**
-
 </details>
 
 <br>
@@ -437,13 +435,9 @@ By default, your authorship name is the name of your macOS user account, and the
 ##### Git Rebase Convention<!-- omit in toc -->
 
 <details><summary>🔎 Learn More</summary><br>
-
 </details>
 
 <details><summary>📋 View Steps</summary><br>
-
-**STEP 1.**
-
 </details>
 
 <br>
@@ -459,15 +453,31 @@ By default, your authorship name is the name of your macOS user account, and the
 
 ### Your Frontend Scripting Language<!-- omit in toc -->
 
+<br>
+
 #### NVM<!-- omit in toc -->
+
+<br>
 
 #### Node.js<!-- omit in toc -->
 
+<br>
+
 #### NPM<!-- omit in toc -->
+
+<br>
 
 #### JavaScript Add-Ons<!-- omit in toc -->
 
+<br>
+
 ##### TypeScript<!-- omit in toc -->
+
+<details><summary>🔎 Learn More</summary><br>
+</details>
+
+<details><summary>📋 View Steps</summary><br>
+</details>
 
 <br>
 
@@ -482,7 +492,11 @@ By default, your authorship name is the name of your macOS user account, and the
 
 ### Your Database Management Programs
 
+<br>
+
 #### PostgreSQL<!-- omit in toc -->
+
+<br>
 
 #### MongoDB<!-- omit in toc -->
 
@@ -499,17 +513,48 @@ By default, your authorship name is the name of your macOS user account, and the
 
 ### Your Backend Scripting Language
 
+<br>
+
 #### Rbenv<!-- omit in toc -->
+
+<br>
 
 #### Ruby<!-- omit in toc -->
 
+<br>
+
 #### Ruby Gems<!-- omit in toc -->
+
+<br>
 
 ##### Pry<!-- omit in toc -->
 
+<details><summary>🔎 Learn More</summary><br>
+</details>
+
+<details><summary>📋 View Steps</summary><br>
+</details>
+
+<br>
+
 ##### Rspec<!-- omit in toc -->
 
+<details><summary>🔎 Learn More</summary><br>
+</details>
+
+<details><summary>📋 View Steps</summary><br>
+</details>
+
+<br>
+
 ##### Rails<!-- omit in toc -->
+
+<details><summary>🔎 Learn More</summary><br>
+</details>
+
+<details><summary>📋 View Steps</summary><br>
+</details>
+
 
 <br>
 
@@ -524,13 +569,23 @@ By default, your authorship name is the name of your macOS user account, and the
 
 ### Your GUI Applications
 
+<br>
+
 #### Google Chrome<!-- omit in toc -->
+
+<br>
 
 #### iTerm2<!-- omit in toc -->
 
+<br>
+
 #### Visual Studio Code<!-- omit in toc -->
 
+<br>
+
 #### PostMan<!-- omit in toc -->
+
+
 
 <br>
 
@@ -555,9 +610,21 @@ By default, your authorship name is the name of your macOS user account, and the
 
 ### Your macOS Environment
 
+<br>
+
 #### macOS Plugins<!-- omit in toc -->
 
+<br>
+
 ##### Magnet<!-- omit in toc -->
+
+<details><summary>🔎 Learn More</summary><br>
+</details>
+
+<details><summary>📋 View Steps</summary><br>
+</details>
+
+<br>
 
 <br>
 
@@ -572,11 +639,25 @@ By default, your authorship name is the name of your macOS user account, and the
 
 ### Your Shell Environment
 
+<br>
+
 #### Terminal Settings<!-- omit in toc -->
+
+<br>
 
 #### Zsh Plugins<!-- omit in toc -->
 
+<br>
+
 ##### Zsh Completions<!-- omit in toc -->
+
+<details><summary>🔎 Learn More</summary><br>
+</details>
+
+<details><summary>📋 View Steps</summary><br>
+</details>
+
+<br>
 
 #### Oh My Zsh Themes<!-- omit in toc -->
 
@@ -593,19 +674,55 @@ By default, your authorship name is the name of your macOS user account, and the
 
 ### Your Integrated Development Environment
 
+<br>
+
 #### VSCode Settings<!-- omit in toc -->
+
+<br>
 
 #### VSCode Extensions<!-- omit in toc -->
 
+<br>
+
 ##### Bracket Pair Colorizer<!-- omit in toc -->
 
-##### Indent Rainbow<!-- omit in toc -->
+<details><summary>🔎 Learn More</summary><br>
+</details>
+
+<details><summary>📋 View Steps</summary><br>
+</details>
+
+<br>
+
+##### Indent Rainbow<!-- omit in toc --> 
+
+<details><summary>🔎 Learn More</summary><br>
+</details>
+
+<details><summary>📋 View Steps</summary><br>
+</details>
+
+<br>
 
 #### VSCode Themes<!-- omit in toc -->
 
 ##### Color Themes<!-- omit in toc -->
 
+<details><summary>🔎 Learn More</summary><br>
+</details>
+
+<details><summary>📋 View Steps</summary><br>
+</details>
+
+<br>
+
 ##### Icon Themes<!-- omit in toc -->
+
+<details><summary>🔎 Learn More</summary><br>
+</details>
+
+<details><summary>📋 View Steps</summary><br>
+</details>
 
 <br>
 
@@ -620,13 +737,40 @@ By default, your authorship name is the name of your macOS user account, and the
 
 ### Your Browser Environment
 
+<br>
+
 #### Google Chrome Extensions<!-- omit in toc -->
+
+<br>
 
 ##### React Dev Tools<!-- omit in toc -->
 
+<details><summary>🔎 Learn More</summary><br>
+</details>
+
+<details><summary>📋 View Steps</summary><br>
+</details>
+
+<br>
+
 ##### Color Picker<!-- omit in toc -->
 
+<details><summary>🔎 Learn More</summary><br>
+</details>
+
+<details><summary>📋 View Steps</summary><br>
+</details>
+
+<br>
+
 ##### JSON Viewer<!-- omit in toc -->
+
+<details><summary>🔎 Learn More</summary><br>
+</details>
+
+<details><summary>📋 View Steps</summary><br>
+</details>
+
 
 <br>
 
