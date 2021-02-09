@@ -17,6 +17,7 @@
   - [Your Primary Package Manager](#your-primary-package-manager)
   - [Your Terminal Shell](#your-terminal-shell)
   - [Your Version Control Manager](#your-version-control-manager)
+  - [Your Frontend Scripting Language](#your-frontend-scripting-language)
   - [Your Database Management Programs](#your-database-management-programs)
   - [Your Backend Scripting Language](#your-backend-scripting-language)
   - [Your GUI Applications](#your-gui-applications)
@@ -49,10 +50,10 @@ This guide covers the core technologies your computer will need for a **powerful
 
 In addition to these installations, I'll also be providing some customizations that will help you make the most of your coding environment, including:
 
-- [Your macOS Environment], including [macOS Plugins];
-- [Your Shell Environment], including [Terminal Settings], [Zsh Plugins], and [Oh My Zsh Themes];
-- [Your Integrated Development Environment], including [VSCode Settings], [VSCode Extensions], and [VSCode Themes]; and finally,
-- [Your Browser Environment], namely, [Google Chrome Extensions].
+- [Your macOS Environment], using [macOS Plugins];
+- [Your Shell Environment], using [Terminal Settings], [Zsh Plugins], and [Oh My Zsh Themes];
+- [Your Integrated Development Environment], using [VSCode Settings], [VSCode Extensions], and [VSCode Themes]; and finally,
+- [Your Browser Environment], using [Google Chrome Extensions].
 
 <br>
 
@@ -75,15 +76,21 @@ I will use these dropdowns to keep the guide relatively clean and focused, but t
 
 Before you start, I **heavily** recommend three things:
 
+<br>
+
 #### 1) Familiarize Yourself With The Tools of the Trade<!-- omit in toc -->
 
 If you're _brand_ new to software engineering, or if you aren't particularly comfortable with your computer, including the command line interface, please review the guide to [Tools of the Trade]. Even for experienced engineers, **focusing on these more basic tools can significantly level up one's coding prowess and productivity**.
+
+<br>
 
 #### 2) Practice Researching Anything & Everything<!-- omit in toc -->
 
 With the vast complexities of software engineering, it is simply impossible to know and memorize **everything** you will need on a daily basis. Get used to researching and confirming small details that will make a huge differences. 
 
 In this spirit, open up the [Glossary] in a new tab so you can reference it at any time during setup. If you're unsure or confused about the technologies or concepts I reference, just hop over to the Glossary and look it up.
+
+<br>
 
 #### 3) Be Thorough & Methodical<!-- omit in toc -->
 
@@ -372,8 +379,6 @@ brew install git
 
 <details><summary>✅ Verify Installation</summary><br>
 
-
-
 </details>
 
 <details><summary>❗ Common Errors</summary><br>
@@ -451,19 +456,28 @@ By default, your authorship name is the name of your macOS user account, and the
 <img src="assets/web-development.png" width="60%">
 </div>
 
-### Your Frontend Scripting Language<!-- omit in toc -->
+### Your Frontend Scripting Language
 
 <br>
 
 #### NVM<!-- omit in toc -->
 
+[NVM Website] | [NVM Documentation] | [NVM GitHub] | [NVM Issue Tickets]
+
+
 <br>
 
 #### Node.js<!-- omit in toc -->
 
+[Node Website] | [Node Documentation] | [Node GitHub] | [Node Issue Tickets]
+
+
 <br>
 
 #### NPM<!-- omit in toc -->
+
+[NPM Website] | [NPM Documentation] | [NPM GitHub] | [NPM Issue Tickets]
+
 
 <br>
 
@@ -472,6 +486,9 @@ By default, your authorship name is the name of your macOS user account, and the
 <br>
 
 ##### TypeScript<!-- omit in toc -->
+
+[TypeScript Website] | [TypeScript Documentation] | [TypeScript GitHub] | [TypeScript Issue Tickets]
+
 
 <details><summary>🔎 Learn More</summary><br>
 </details>
@@ -496,9 +513,15 @@ By default, your authorship name is the name of your macOS user account, and the
 
 #### PostgreSQL<!-- omit in toc -->
 
+[PostgreSQL Website] | [PostgreSQL Documentation] | [PostgreSQL GitHub] | [PostgreSQL Issue Tickets]
+
+
 <br>
 
 #### MongoDB<!-- omit in toc -->
+
+[MongoDB Website] | [MongoDB Documentation] | [MongoDB GitHub] | [MongoDB Issue Tickets]
+
 
 <br>
 
@@ -820,10 +843,30 @@ By default, your authorship name is the name of your macOS user account, and the
 
 [Your Frontend Scripting Language]: #your-frontend-scripting-language
 [NVM]: #nvm
+[NVM Website]:
+[NVM Documentation]:
+[NVM GitHub]:
+[NVM Issue Tickets]:
+
 [Node.js]: #nodejs
+[Node Website]:
+[Node Documentation]:
+[Node GitHub]:
+[Node Issue Tickets]:
+
 [NPM]: #npm
+[NPM Website]:
+[NPM Documentation]:
+[NPM GitHub]:
+[NPM Issue Tickets]:
+
 [JavaScript Add-Ons]: #javascript-add-ons
 [TypeScript]: #typescript
+[TypeScript Website]:
+[TypeScript Documentation]:
+[TypeScript GitHub]:
+[TypeScript Issue Tickets]:
+
 
 [Your Database Management Programs]: #your-database-management-programs
 [PostgreSQL]: #postgresql
