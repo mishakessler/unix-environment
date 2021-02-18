@@ -811,12 +811,12 @@ By default, your authorship name is the name of your macOS user account, and the
 ***
 
 <!-- Links -->
-[Guide to Determining Your Environment]: github.com/mishakessler/determine-your-environment
-[Unix Version]: github.com/mishakessler/unix-environment
-[M1 Version]: github.com/mishakessler/m1-environment
-[Linux Version]: github.com/mishakessler/linux-environment
-[Tools of the Trade]: github.com/mishakessler/tools-of-the-trade
-[Glossary]: github.com/mishakessler/glossary
+[Guide to Determining Your Environment]: https://github.com/mishakessler/determine-your-environment
+[Unix Version]: https://github.com/mishakessler/unix-environment
+[M1 Version]: https://github.com/mishakessler/m1-environment
+[Linux Version]: https://github.com/mishakessler/linux-environment
+[Tools of the Trade]: https://github.com/mishakessler/tools-of-the-trade
+[Glossary]: https://github.com/mishakessler/glossary
 
 [Your Terminal Toolbox]: #your-terminal-toolbox
 [Command Line Tools]: #command-line-tools
