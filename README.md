@@ -1,10 +1,10 @@
 # Unix Environment Setup<!-- omit in toc -->
 
-**An extremely thorough guide to setting up a powerful software engineering Unix environment.**
+**An extremely thorough guide to setting up a powerful software engineering environment on Unix (macOS).**
 
 <br>
 
-> ⚠️ **This guide is written for non-M1 chip Unix computers, and tested on macOS Big Sur**. If you are on an M1 chip MacBook, please consult the [M1 Version] (Coming Soon); if you are on Linux, please consult my [Linux Version] (Coming Soon). If you are unsure, please consult my [Guide to Determining Your Environment] (Coming Soon).
+> ⚠️ **This guide is written for non-M1 chip computers and is tested for errors on macOS Big Sur**. If you are on an M1 chip MacBook, please consult the [M1 Version] (Coming Soon); if you are on Linux, please consult my [Linux Version] (Coming Soon). If you are unsure, please consult my [Guide to Determining Your Environment] (Coming Soon).
 
 <br>
 
@@ -462,7 +462,7 @@ By default, your authorship name is the name of your macOS user account, and the
 
 #### NVM<!-- omit in toc -->
 
-[NVM Website] | [NVM Documentation] | [NVM GitHub] | [NVM Issue Tickets]
+[NVM GitHub] | [NVM Troubleshooting] | [NVM Issue Tickets]
 
 
 <br>
@@ -478,6 +478,15 @@ By default, your authorship name is the name of your macOS user account, and the
 
 [NPM Website] | [NPM Documentation] | [NPM GitHub] | [NPM Issue Tickets]
 
+<br>
+
+#### NPM Configurations<!-- omit in toc -->
+
+<details><summary>🔎 Learn More</summary><br>
+</details>
+
+<details><summary>📋 View Steps</summary><br>
+</details>
 
 <br>
 
@@ -843,29 +852,28 @@ By default, your authorship name is the name of your macOS user account, and the
 
 [Your Frontend Scripting Language]: #your-frontend-scripting-language
 [NVM]: #nvm
-[NVM Website]:
-[NVM Documentation]:
-[NVM GitHub]:
-[NVM Issue Tickets]:
+[NVM GitHub]: https://github.com/nvm-sh/nvm
+[NVM Troubleshooting]: https://github.com/nvm-sh/nvm#troubleshooting-on-macos
+[NVM Issue Tickets]: https://github.com/nvm-sh/nvm/issues
 
 [Node.js]: #nodejs
-[Node Website]:
-[Node Documentation]:
-[Node GitHub]:
-[Node Issue Tickets]:
+[Node Website]: https://nodejs.org/en/
+[Node Documentation]: https://nodejs.org/en/docs/guides/
+[Node GitHub]: https://github.com/nodejs/node
+[Node Issue Tickets]: https://github.com/nodejs/node/issues
 
 [NPM]: #npm
-[NPM Website]:
-[NPM Documentation]:
-[NPM GitHub]:
-[NPM Issue Tickets]:
+[NPM Website]: https://www.npmjs.com/
+[NPM Documentation]: https://docs.npmjs.com/
+[NPM GitHub]: https://github.com/npm/cli
+[NPM Issue Tickets]: https://github.com/npm/cli/issues
 
 [JavaScript Add-Ons]: #javascript-add-ons
 [TypeScript]: #typescript
-[TypeScript Website]:
-[TypeScript Documentation]:
-[TypeScript GitHub]:
-[TypeScript Issue Tickets]:
+[TypeScript Website]: https://www.typescriptlang.org/
+[TypeScript Documentation]: https://www.typescriptlang.org/docs/
+[TypeScript GitHub]: https://github.com/microsoft/TypeScript
+[TypeScript Issue Tickets]: https://github.com/microsoft/TypeScript/issues
 
 
 [Your Database Management Programs]: #your-database-management-programs
