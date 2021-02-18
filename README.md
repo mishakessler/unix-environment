@@ -4,7 +4,7 @@
 
 <br>
 
-> ⚠️ **This guide is written for non-M1 chip computers and is tested for errors on macOS Big Sur**. If you are on an M1 chip MacBook, please consult the [M1 Version] (Coming Soon); if you are on Linux, please consult my [Linux Version] (Coming Soon). If you are unsure, please consult my [Guide to Determining Your Environment] (Coming Soon).
+> ⚠️ **This guide is written for non-M1 chip computers and is tested for errors on macOS Big Sur**. If you are on an M1 chip MacBook, please consult the M1 Version (Coming Soon); if you are on Linux, please consult my Linux Version (Coming Soon). If you are unsure, please consult my Guide to Determining Your Environment (Coming Soon).
 
 <br>
 
@@ -111,7 +111,7 @@ Let's dive in!
 
 This guide will be using **terminal** for all installations. One quick warning:
 
-> **⚠️ Warning**: While installing, **never** use the `sudo` command, unless specifically told to do so. `sudo`, meaning "Super User DO", will install software in a different file/folder location on your hard drive, causing issues in the future.
+> ⚠️ While installing, **never** use the `sudo` command, unless specifically told to do so. `sudo`, meaning "Super User DO", will often install software in a different file/folder location on your hard drive, causing issues in the future.
 
 With that out of the way, ready to get started? Let's open your terminal!
 
@@ -129,7 +129,7 @@ With that out of the way, ready to get started? Let's open your terminal!
 
 #### Command Line Tools<!-- omit in toc -->
 
-[Command Line Tools Instructions] | [Command Line Tools Downloads] | [Xcode Documentation] | [Xcode Resources]
+> [Xcode Documentation] | [Xcode Resources] | [Command Line Tools Downloads] 
 
 Xcode is Apple's native Integrated Development Environment, or IDE. We won't be using Xcode, but we _will_ be using a subset of the Xcode app, called the _Command Line Tools_ package.
 
@@ -191,7 +191,7 @@ xcode-select -r
 
 #### Homebrew<!-- omit in toc -->
 
-[Brew Website] | [Brew Documentation] | [Brew GitHub] | [Brew Issue Tickets]
+> [Brew Documentation] | [Brew GitHub] | [Brew Issue Tickets]
 
 Homebrew is a _package manager_ for macOS. Most core software you will need for the Unix dev environment is installed via Homebrew.
 
@@ -256,7 +256,7 @@ It's highly unlikely that this will error out. Even when it's already installed,
 
 #### Zsh<!-- omit in toc -->
 
-[Zsh Website] | [Zsh Documentation] | [Zsh Users Project]
+> [Zsh Documentation] | [Zsh Users Project]
 
 Zsh, pronounced by the acronym Z-S-H, is a Unix _shell_ and command interpreter for shell scripting. It serves as a replacement for _Bash_, the default Unix Terminal shell.
  
@@ -310,7 +310,7 @@ If running `echo $SHELL` returned `bin/bash`, this means your default shell has 
 
 #### Oh My Zsh<!-- omit in toc -->
 
-[Oh My Zsh Website] | [Oh My Zsh Documentation] | [Oh My Zsh Github] | [Oh My Zsh Issue Tickets]
+> [Oh My Zsh Documentation] | [Oh My Zsh Github] | [Oh My Zsh Issue Tickets]
 
 Oh My Zsh is a community-driven framework for the Z shell. It helps us customize and configure our Z shell.
 
@@ -326,9 +326,13 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 <details><summary>✅ Verify Installation</summary><br>
 
+
+
 </details>
 
 <details><summary>❗ Common Errors</summary><br>
+
+
 
 </details>
 
@@ -349,7 +353,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 #### Git<!-- omit in toc -->
 
-[Git Website] | [Git Documentation] | [Git Github]
+> [Git Documentation] | [Git on Github]
 
 _Git_ is a free, open-source _version control system_– meaning, it allows teams to collaborate on code that's stored safely in cloud– and comes with built-in tools for avoiding code conflicts.
 
@@ -365,13 +369,13 @@ Note, _Git_ is not the same as _GitHub_– Git is the _version control system_, 
 
 <details><summary>📋 View Installation Steps</summary><br>
 
-**STEP 1.** Copy and paste the following Homebrew command in your terminal:
+**STEP 1.** Run the following Homebrew command in your terminal:
 
 ```shell
 brew install git
 ```
 
-> ⚠️ Warning: Like before, any `brew` command may take an opportunity to upgrade Homebrew dependencies before actually installing the software you've requested– that's all to say, don't worry if a lot seems to be happening when you run a `brew` command.
+> ⚠️ Like before, any `brew` command may take an opportunity to upgrade Homebrew dependencies before actually installing the software you've requested– that's all to say, don't worry if a lot seems to be happening when you run a `brew` command.
 
 
 
@@ -379,9 +383,13 @@ brew install git
 
 <details><summary>✅ Verify Installation</summary><br>
 
+
+
 </details>
 
 <details><summary>❗ Common Errors</summary><br>
+
+
 
 </details>
 
@@ -393,27 +401,11 @@ We're not done just yet with Git– in order for your computer to utilize your 
 
 <br>
 
-##### Git Security Token<!-- omit in toc -->
+##### Git Identity Information<!-- omit in toc -->
 
 <details><summary>🔎 Learn More</summary><br>
 
-For you to have full control over your Git repositories from your Terminal, we need to set up your GitHub username and password, and a security token, giving your Git-based commands the proper permissions to be executed.
-
-</details>
-
-<details><summary>📋 View Steps</summary><br>
-
-**STEP 1.**
-
-</details>
-
-<br>
-
-##### Git Author Information<!-- omit in toc -->
-
-<details><summary>🔎 Learn More</summary><br>
-
-For you to receive full "credit" for your work, your Git configuration includes your "author information", including your name and email address. Each time you make a commit to your Git repository, the commit actually includes this information on the commit details, and this enables GitHub to link and credit your commits to your GitHub profile.
+For you to receive full "credit" for your work, your Git configuration includes your "author information", including your name and email address. Each time you make a commit to your Git repository, the commit includes this information on the commit details, and this enables GitHub to link and credit your commits to your GitHub profile.
 
 By default, your authorship name is the name of your macOS user account, and the email is often that name at your "local" email– for example, `misha@mishasmacbookpro.local`. Obviously, this needs to be updated.
 
@@ -430,9 +422,11 @@ By default, your authorship name is the name of your macOS user account, and the
 ##### Git Branch Naming Convention<!-- omit in toc -->
 
 <details><summary>🔎 Learn More</summary><br>
+
 </details>
 
 <details><summary>📋 View Steps</summary><br>
+
 </details>
 
 <br>
@@ -440,9 +434,27 @@ By default, your authorship name is the name of your macOS user account, and the
 ##### Git Rebase Convention<!-- omit in toc -->
 
 <details><summary>🔎 Learn More</summary><br>
+
 </details>
 
 <details><summary>📋 View Steps</summary><br>
+
+</details>
+
+<br>
+
+##### Git Security Token<!-- omit in toc -->
+
+<details><summary>🔎 Learn More</summary><br>
+
+For you to have full control over your Git repositories from your Terminal, we need to set up your GitHub username and password, and a security token, giving your Git-based commands the proper permissions to be executed.
+
+</details>
+
+<details><summary>📋 View Steps</summary><br>
+
+**STEP 1.** 
+
 </details>
 
 <br>
@@ -463,6 +475,7 @@ By default, your authorship name is the name of your macOS user account, and the
 #### NVM<!-- omit in toc -->
 
 [NVM GitHub] | [NVM Troubleshooting] | [NVM Issue Tickets]
+
 
 
 <br>
@@ -617,12 +630,9 @@ By default, your authorship name is the name of your macOS user account, and the
 
 #### PostMan<!-- omit in toc -->
 
-
-
 <br>
 
 [back to top ⤴️]
-
 
 ***
 ***
@@ -847,7 +857,7 @@ By default, your authorship name is the name of your macOS user account, and the
 [Git]: #git
 [Git Website]: https://git-scm.com/
 [Git Documentation]: https://git-scm.com/doc
-[Git Github]: https://github.com/git/git
+[Git on Github]: https://github.com/git/git
 [Git Configurations]: #git-configurations
 
 [Your Frontend Scripting Language]: #your-frontend-scripting-language
@@ -875,10 +885,18 @@ By default, your authorship name is the name of your macOS user account, and the
 [TypeScript GitHub]: https://github.com/microsoft/TypeScript
 [TypeScript Issue Tickets]: https://github.com/microsoft/TypeScript/issues
 
-
 [Your Database Management Programs]: #your-database-management-programs
 [PostgreSQL]: #postgresql
+[PostgreSQL Website]: #
+[PostgreSQL Documentation]: #
+[PostgreSQL GitHub]: #
+[PostgreSQL Issue Tickets]: #
+
 [MongoDB]: #mongodb
+[MongoDB Website]: #
+[MongoDB Documentation]: #
+[MongoDB GitHub]: #
+[MongoDB Issue Tickets]: #
 
 [Your Backend Scripting Language]: #your-backend-scripting-language
 [Rbenv]: #rbenv
@@ -917,4 +935,4 @@ By default, your authorship name is the name of your macOS user account, and the
 [Color Picker]: #color-picker
 [JSON Viewer]: #json-viewer
 
-[back to top ⤴️]: #table-of-contents-
+[back to top ⤴️]: #table-of-contents
