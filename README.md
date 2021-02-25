@@ -74,19 +74,25 @@ I will use these dropdowns to keep the guide relatively clean and focused, but t
 
 Before you start, I **heavily** recommend three things:
 
-#### 1) Familiarize Yourself With The Tools of the Trade<!-- omit in toc -->
+<details><summary>1) Familiarize Yourself With The Tools of the Trade</summary><br>
 
 If you're _brand_ new to software engineering, or if you aren't particularly comfortable with your computer, including the command line interface, please review the guide to [Tools of the Trade]. Even for experienced engineers, **focusing on these more basic tools can significantly level up one's coding prowess and productivity**.
 
-#### 2) Practice Researching Anything & Everything<!-- omit in toc -->
+</details><br>
+
+<details><summary>2) Practice Researching Anything & Everything</summary><br>
 
 With the vast complexities of software engineering, it is simply impossible to know and memorize **everything** you will need on a daily basis. Get used to researching and confirming small details that will make a huge differences.
 
 In this spirit, I've included links to documentation on all the software you'll need, and you can open up the [Glossary] in a new tab; if you have any questions or need to troubleshoot, use these to your advantage.
 
-#### 3) Be Thorough & Methodical<!-- omit in toc -->
+</details><br>
+
+<details><summary>3) Be Thorough & Methodical</summary><br>
 
 Finally, and perhaps most importantly, you **must** use methodical, step-by-step attention to detail. This is integral to a career in software engineering, but especially when setting up your environment, **doing these steps out of order can have long-lasting, code-breaking implications**.
+
+</details><br>
 
 Let's dive in!
 
