@@ -78,7 +78,7 @@ Before you start, I **heavily** recommend three things:
 
 If you're _brand_ new to software engineering, or if you aren't particularly comfortable with your computer, including the command line interface, please review the guide to [Tools of the Trade]. Even for experienced engineers, **focusing on these more basic tools can significantly level up one's coding prowess and productivity**.
 
-</details><br>
+</details>
 
 <details><summary>2) Practice Researching Anything & Everything</summary><br>
 
@@ -86,7 +86,7 @@ With the vast complexities of software engineering, it is simply impossible to k
 
 In this spirit, I've included links to documentation on all the software you'll need, and you can open up the [Glossary] in a new tab; if you have any questions or need to troubleshoot, use these to your advantage.
 
-</details><br>
+</details>
 
 <details><summary>3) Be Thorough & Methodical</summary><br>
 
