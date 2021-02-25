@@ -72,6 +72,10 @@ I will use these dropdowns to keep the guide relatively clean and focused, but t
 
 <br>
 
+***
+
+<br>
+
 ### Some Tips Before You Start
 
 Before you start, I **heavily** recommend three things:
