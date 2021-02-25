@@ -35,21 +35,21 @@
 
 This guide covers the core technologies your computer will need for a **powerful** software engineering and web dev environment. Briefly let's overview all of the installations:
 
-- Your Terminal Toolbox: [Command Line Tools];
-- Your Primary Package Manager: [Homebrew];
-- Your Terminal Shell: [Zsh] and the [Oh My Zsh] framework;
-- Your Version Control Manager: [Git] and the necessary [Git Configurations];
-- Your Frontend Scripting Language: [Node.js], as well as the version manager, [NVM], and the package manager, [NPM];
-- Your Database Management Programs: [PostgreSQL] and [MongoDB];
-- Your Backend Scripting Language: [Ruby], as well as the version manager, [Rbenv], and some packages, [Ruby Gems]; and
+- Your Terminal Toolbox ([Command Line Tools]);
+- Your Primary Package Manager ([Homebrew]);
+- Your Terminal Shell ([Zsh] and the [Oh My Zsh] framework);
+- Your Version Control Manager ([Git] and the necessary [Git Configurations]);
+- Your Frontend Scripting Language ([Node.js], as well as the version manager, [NVM], and the package manager, [NPM]);
+- Your Database Management Programs ([PostgreSQL] and [MongoDB]);
+- Your Backend Scripting Language ([Ruby], as well as the version manager, [Rbenv], and some packages, [Ruby Gems]); and
 - Your GUI Applications.
 
 In addition to these installations, I'll also be providing some customizations that will help you make the most of your coding environment, including:
 
-- [Your macOS Environment], using [macOS Plugins];
-- [Your Shell Environment], using [Terminal Settings], [Zsh Plugins], and [Oh My Zsh Themes];
-- [Your Integrated Development Environment], using [VSCode Settings], [VSCode Extensions], and [VSCode Themes]; and finally,
-- [Your Browser Environment], using [Google Chrome Extensions].
+- Your macOS Environment ([macOS Plugins]);
+- Your Shell Environment ([Terminal Settings], [Zsh Plugins], and [Oh My Zsh Themes]);
+- Your Integrated Development Environment ([VSCode Settings], [VSCode Extensions], and [VSCode Themes]); and finally,
+- Your Browser Environment ([Google Chrome Extensions]).
 
 <br>
 
