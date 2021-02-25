@@ -31,8 +31,6 @@
 
 ***
 
-<br>
-
 ## OVERVIEW
 
 This guide covers the core technologies your computer will need for a **powerful** software engineering and web dev environment. Briefly let's overview all of the installations:
@@ -74,8 +72,6 @@ I will use these dropdowns to keep the guide relatively clean and focused, but t
 
 ***
 
-<br>
-
 ### Some Tips Before You Start
 
 Before you start, I **heavily** recommend three things:
@@ -108,8 +104,6 @@ Let's dive in!
 
 ***
 ***
-
-<br>
 
 ## INSTALLATIONS
 
