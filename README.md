@@ -35,16 +35,14 @@
 
 This guide covers the core technologies your computer will need for a **powerful** software engineering and web dev environment. Briefly let's overview all of the installations:
 
-- [Your Terminal Toolbox], [Command Line Tools];
-- [Your Primary Package Manager], [Homebrew];
-- [Your Terminal Shell], [Zsh], and the [Oh My Zsh] framework;
-- [Your Version Control Manager], [Git], and the necessary [Git Configurations];
-- [Your Frontend Scripting Language], [Node.js], and the necessary version manager, [NVM], and package manager, [NPM];
-- [Your Database Management Programs], [PostgreSQL] and [MongoDB];
-- [Your Backend Scripting Language], [Ruby], and the necessary version manager, [Rbenv], and some packages, [Ruby Gems]; and
-- [Your GUI Applications].
-
-<br>
+- Your Terminal Toolbox: [Command Line Tools];
+- Your Primary Package Manager: [Homebrew];
+- Your Terminal Shell: [Zsh] and the [Oh My Zsh] framework;
+- Your Version Control Manager: [Git] and the necessary [Git Configurations];
+- Your Frontend Scripting Language: [Node.js], as well as the version manager, [NVM], and the package manager, [NPM];
+- Your Database Management Programs: [PostgreSQL] and [MongoDB];
+- Your Backend Scripting Language: [Ruby], as well as the version manager, [Rbenv], and some packages, [Ruby Gems]; and
+- Your GUI Applications.
 
 In addition to these installations, I'll also be providing some customizations that will help you make the most of your coding environment, including:
 
@@ -76,27 +74,19 @@ I will use these dropdowns to keep the guide relatively clean and focused, but t
 
 Before you start, I **heavily** recommend three things:
 
-<br>
-
 #### 1) Familiarize Yourself With The Tools of the Trade<!-- omit in toc -->
 
 If you're _brand_ new to software engineering, or if you aren't particularly comfortable with your computer, including the command line interface, please review the guide to [Tools of the Trade]. Even for experienced engineers, **focusing on these more basic tools can significantly level up one's coding prowess and productivity**.
 
-<br>
-
 #### 2) Practice Researching Anything & Everything<!-- omit in toc -->
 
-With the vast complexities of software engineering, it is simply impossible to know and memorize **everything** you will need on a daily basis. Get used to researching and confirming small details that will make a huge differences. 
+With the vast complexities of software engineering, it is simply impossible to know and memorize **everything** you will need on a daily basis. Get used to researching and confirming small details that will make a huge differences.
 
-In this spirit, open up the [Glossary] in a new tab so you can reference it at any time during setup. If you're unsure or confused about the technologies or concepts I reference, just hop over to the Glossary and look it up.
-
-<br>
+In this spirit, I've included links to documentation on all the software you'll need, and you can open up the [Glossary] in a new tab; if you have any questions or need to troubleshoot, use these to your advantage.
 
 #### 3) Be Thorough & Methodical<!-- omit in toc -->
 
 Finally, and perhaps most importantly, you **must** use methodical, step-by-step attention to detail. This is integral to a career in software engineering, but especially when setting up your environment, **doing these steps out of order can have long-lasting, code-breaking implications**.
-
-<br>
 
 Let's dive in!
 
