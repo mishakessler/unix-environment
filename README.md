@@ -211,15 +211,15 @@ In terminal, Homebrew utilizes the `brew` command prefix.
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-**STEP 2.** If prompted, enter your Admin password. (This is the password you use when booting your computer and logging into your user account.)
+**STEP 2.** You should be prompted with `==> Checking for 'sudo' access (which may request your password).` You'll see a new line with a blinking key icon. Enter your Admin password.
 
-> ⚠️ Warning: As you type, your cursor will not move and your typing won't be visible– simply type your full password and hit enter.
+> ⚠️ As you type, your cursor will not move and your typing won't be visible– simply type your full password and hit enter.
 
-**STEP 3.** Once finished, review the response you received.
+**STEP 3.** Next, you should be prompted with `==> This script will install: ...` and `==> The following new directories will be created: ...`, listing a series of file-folder paths, followed by `Press RETURN to continue or any other key to abort`. Press RETURN.
 
-> ⚠️ Warning: While Homebrew is still installing, you won't be able to see your bash command line prompt.
+> ⚠️ While Homebrew is still installing, you won't be able to use your bash command line prompt. You should see multiple processes running.
 
-If Homebrew was successfully installed, you will see a large message that begins with `==> Installation successful!`.
+If successfully installed, you will see a large message that begins with `==> Installation successful!`.
 
 </details>
 
