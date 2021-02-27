@@ -127,7 +127,7 @@ With that out of the way, ready to get started? Let's open your terminal!
 
 Xcode is Apple's native Integrated Development Environment, or IDE. We won't be using Xcode, but we _will_ be using a subset of the Xcode app, called the _Command Line Tools_ package.
 
-> ⚠️ Warning: If you have the full Xcode suite installed already, skip to the Verify Installation steps.
+> ⚠️ If you have the full Xcode suite installed already, skip to the Verify Installation steps.
 
 <details><summary>🔎 Learn More</summary><br>
 
@@ -145,7 +145,9 @@ In Terminal, Command Line Tools uses `xcode-select` command prefix.
 xcode-select --install
 ```
 
-**STEP 2.** Follow the UI prompt to install the Command Line Tools.
+**STEP 2.** Follow the UI prompt to install the Command Line Tools. While installing, the prompt will show you a status bar and the approximate time remaining.
+
+If successfully installed, the prompt will tell you, "The software was installed." Click "Done".
 
 </details>
 
@@ -161,7 +163,7 @@ To confirm installation location, run the command `xcode-select -p`. The output 
 
 If Command Line Tools are already installed, you will receive `xcode-select: error: command line tools are already installed, use "Software Update" to install updates`.
 
-If Command Line Tools is installed at the wrong path, try running the following command to reset the path location.
+If Command Line Tools is installed at the wrong path, this may be intentional; if you have the full Xcode suite, the output should state `/Library/Developer/CommandLineTools`; if not, simply try running the following command to reset the path location.
 
 ```shell
 xcode-select -r
