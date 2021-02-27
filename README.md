@@ -443,7 +443,7 @@ By default, your authorship name is the name of your macOS user account, and the
 
 <details><summary>🔎 Learn More</summary><br>
 
-For you to have full control over your Git repositories from your Terminal, we need to set up your GitHub username and password, and a security token, giving your Git-based commands the proper permissions to be executed.
+For you to have full control over your Git repositories from your Terminal, we need to set up your GitHub username and password, a security token, giving your Git-based commands the proper permissions to be executed, and GPG tools, allowing your commits to be verified locally.
 
 </details>
 
