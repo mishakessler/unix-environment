@@ -384,19 +384,19 @@ brew install git
 
 > ⚠️ Like before, any `brew` command may take an opportunity to upgrade Homebrew dependencies before actually installing the software you've requested– that's all to say, don't worry if a lot seems to be happening when you run a `brew` command.
 
-
+If successful, you should see multiple Brew installations (the dependencies for the Git software). 
 
 </details>
 
 <details><summary>✅ Verify Installation</summary><br>
 
-
+To confirm, run `git --version`. The output should be `git version 2.24.0 (Apple Git-128)` or higher.
 
 </details>
 
 <details><summary>❗ Common Errors</summary><br>
 
-
+It's highly rare that this step would error out; if you are receiving unexpected returns, visit the Git documentation, at the above link, and search for the text of your error message.
 
 </details>
 
@@ -404,7 +404,7 @@ brew install git
 
 #### Git Configurations<!-- omit in toc -->
 
-We're not done just yet with Git– in order for your computer to utilize your Git VCS correctly, including communicating and syncing with your cloud-based Git repositories, we **need** to set up certain Git _configurations_ for your _global environment_.
+We're not done just yet with Git– in order for your computer to utilize your Git VCS correctly, including communicating and syncing with your cloud-based Git repositories, it's highly important that we set up certain Git _configurations_ for your _global environment_.
 
 <br>
 
@@ -420,7 +420,34 @@ By default, your authorship name is the name of your macOS user account, and the
 
 <details><summary>📋 View Steps</summary><br>
 
-**STEP 1.**
+**STEP 1.** Run the following command, replacing the name and email address with your own information. (The email should correspond with your personal GitHub account!)
+
+```shell
+git config --global user.name "Misha Kessler"
+git config --global user.email "misha.kessler@gmail.com"
+```
+
+</details>
+
+<br>
+
+##### Git Default Editor<!-- omit in toc -->
+
+<details><summary>🔎 Learn More</summary><br>
+  
+Occasionally, Git will need to open documents in a code editor, or IDE. By default, the editor used is Vim, a rather confusing interface for novice software engineers. Instead, we'll tell Git to open in our default editor, VS Code. 
+
+(Visual Studio does not need to be installed yet, in order to set up this configuration. We'll cover the installation later in this guide!)
+
+</details>
+
+<details><summary>📋 View Steps</summary><br>
+
+**STEP 1.** Run the following command.
+
+```shell
+git config --global core.editor "code --wait"
+```
 
 </details>
 
@@ -429,10 +456,20 @@ By default, your authorship name is the name of your macOS user account, and the
 ##### Git Branch Naming Convention<!-- omit in toc -->
 
 <details><summary>🔎 Learn More</summary><br>
+  
+Git handles multiple versions of the same document by creating "branches," and software engineers have strong naming conventions and preferences for these branches. Previously, the main branch was called the `master` branch, but convention has moved away from this name due to its invocation of slavery and the language of oppression. 
+
+Now, Git recommends replacing `master` with `main`, but we need to specifically tell our system to start all projects with this name.
 
 </details>
 
 <details><summary>📋 View Steps</summary><br>
+
+**STEP 1.** Run the following command.
+
+```shell
+git config --global init.defaultBranch main
+```
 
 </details>
 
@@ -441,10 +478,18 @@ By default, your authorship name is the name of your macOS user account, and the
 ##### Git Rebase Convention<!-- omit in toc -->
 
 <details><summary>🔎 Learn More</summary><br>
+  
+Rebasing in Git is a tool for integrating changes across versions. Rebasing is a "dangerous" git operation because it alters the Git history– a cardinal sin, when used inappropriately– and occassionally, when dealing with complex git flow, you may be prompted to set your default "pull action." (Don't worry– you'll learn what all of this means soon enough.) Until you understand rebasing, we want to squash that warning by turning off automatic rebasing.
 
 </details>
 
 <details><summary>📋 View Steps</summary><br>
+
+**STEP 1.** Run the following command.
+
+```shell
+git config --global pull.rebase false
+```
 
 </details>
 
@@ -461,6 +506,12 @@ For you to have full control over your Git repositories from your Terminal, we n
 <details><summary>📋 View Steps</summary><br>
 
 **STEP 1.** 
+
+</details>
+
+<details><summary>✅ Verify Configurations</summary><br>
+
+To confirm these configurations are correct, run `git config`. The output should list all the information we've entered.
 
 </details>
 
