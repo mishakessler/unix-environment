@@ -324,17 +324,22 @@ Oh My Zsh is a community-driven framework for the Z shell. It helps us customize
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-</details>
+If Oh My Zsh is successfully installed, you'll see a large message containing:
 
-<details><summary>✅ Verify Installation</summary><br>
-
-
+```shell
+         __                                     __
+  ____  / /_     ____ ___  __  __   ____  _____/ /_
+ / __ \/ __ \   / __ `__ \/ / / /  /_  / / ___/ __ \
+/ /_/ / / / /  / / / / / / /_/ /    / /_(__  ) / / /
+\____/_/ /_/  /_/ /_/ /_/\__, /    /___/____/_/ /_/
+                        /____/                       ....is now installed!
+```
 
 </details>
 
 <details><summary>❗ Common Errors</summary><br>
 
-
+It's highly rare that this step would error out; if you are receiving unexpected returns, visit the Oh My Zsh issue tickets on their GitHub, at the above link, and search for the text of your error message.
 
 </details>
 
