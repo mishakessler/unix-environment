@@ -280,6 +280,8 @@ chsh -s /usr/local/bin/zsh
 
 > ⚠️ You must "hard quit" Terminal– do not just close the window!
 
+</details>
+
 <details><summary>✅ Verify Installation</summary><br>
 
 To confirm installation, run the command `zsh --version`. The output should be `zsh 5.8` or higher.
