@@ -274,13 +274,15 @@ chsh -s /usr/local/bin/zsh
 
 **STEP 3.** If prompted, enter your password.
 
-> ⚠️ Warning: As you type, your cursor will not move and your typing won't be visible– simply type your full password and hit enter.
+> ⚠️ Remember, as you type, your cursor will not move and your typing won't be visible– simply type your full password and hit enter.
 
-</details>
+**STEP 4.** Quit your terminal application and restart it to open your Z shell. 
+
+> ⚠️ You must "hard quit" Terminal– do not just close the window!
 
 <details><summary>✅ Verify Installation</summary><br>
 
-To confirm installation, run the command `zsh -v`. The output should be `zsh 5.8` or higher.
+To confirm installation, run the command `zsh --version`. The output should be `zsh 5.8` or higher.
 
 To confirm Zsh has been made your default shell, run `echo $SHELL`. The output should be `bin/zsh`.
 
@@ -290,7 +292,7 @@ If this is not the case, view the next section, _Common Errors_.
 
 <details><summary>❗ Common Errors</summary><br>
 
-It's highly unlikely that this will error out– if Zsh is already installed, Homebrew will take the opportunity to upgrade any Brew packages before stating:
+If Zsh is already installed, Homebrew will take the opportunity to upgrade any Brew packages before returning:
 
 ```shell
 Warning: zsh <version> is already installed and up-to-date.
@@ -299,6 +301,8 @@ To reinstall <version>, run:
 ```
 
 If running `echo $SHELL` returned `bin/bash`, this means your default shell has not changed. First, try hard quitting your terminal. (Do not simply close the Terminal window. This doesn't quit the application. Use _command + Q_ to quit.) Once it has quit, reopen terminal and re-run `echo $SHELL`. This should fix the issue.
+
+If there are now 
 
 </details>
 
