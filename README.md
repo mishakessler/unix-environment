@@ -479,7 +479,18 @@ For you to have full control over your Git repositories from your Terminal, we n
 
 <details><summary>✅ Verify Configurations</summary><br>
 
-To confirm these configurations are correct, run `git config`. The output should list all the information we've entered.
+To confirm these configurations are correct, run `git config list`. The output should list all the information we've entered, like the following: 
+
+```shell
+credential.helper=osxkeychain
+user.name=[name]
+user.email=[email]
+core.editor=code --wait
+init.defaultbranch=main
+pull.rebase=false
+credential.helper=/usr/local/share/gcm-core/git-credential-manager
+credential.https://dev.azure.com.usehttppath=true
+```
 
 </details>
 
