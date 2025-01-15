@@ -103,7 +103,7 @@ This guide will be using **terminal** for all installations. One quick warning:
 
 > ⚠️ While installing, do not use the `sudo` command, unless specifically told to do so. `sudo`, meaning "Super User DO", will often install software in different file/folder locations on your hard drive. This can cause issues in the future.
 
-With that out of the way, ready to get started? Let's open your terminal!
+Ready to get started? Let's open your terminal!
 
 <br>
 
@@ -124,14 +124,6 @@ With that out of the way, ready to get started? Let's open your terminal!
 Xcode is Apple's native Integrated Development Environment, or IDE. We won't be using Xcode, but we _will_ be using a subset of the Xcode app, called the _Command Line Tools_ package.
 
 > ⚠️ If you have the full Xcode suite installed already, skip to the Verify Installation steps.
-
-<details><summary>🔎 Learn More</summary><br>
-
-At over 12GB, Xcode is a beast of an IDE, and we just don't need to use up that disk space. Instead, we'll use Command Line Tools, which is a smaller package within Xcode. Command Line Tools includes the most commonly used utilities and compilers (_make_, _GNU compiler collection_, _perl_, _git_, etc.), and we will be needing these.
-
-In Terminal, Command Line Tools uses `xcode-select` command prefix.
-
-</details>
 
 <details><summary>📋 View Installation Steps</summary><br>
 
@@ -167,6 +159,12 @@ xcode-select -r
 
 </details>
 
+<details><summary>🔎 Learn More</summary><br>
+
+At over 12GB, Xcode is a beast of an IDE, and we just don't need to use up that disk space. Instead, we'll use Command Line Tools, which is a smaller package within Xcode. Command Line Tools includes the most commonly used utilities and compilers (_make_, _GNU compiler collection_, _perl_, _git_, etc.), and we will be needing these. In Terminal, Command Line Tools uses `xcode-select` command prefix.
+
+</details>
+
 <br>
 
 [back to top ⤴️]
@@ -186,16 +184,6 @@ xcode-select -r
 > [Brew Documentation] | [Brew GitHub] | [Brew Issue Tickets]
 
 Homebrew is a _package manager_ for macOS. Most core software you will need for the Unix dev environment is installed via Homebrew.
-
-<details><summary>🔎 Learn More</summary><br>
-
-Homebrew is a _package manager_, meaning, it provides software packages and can handle safe updating and uninstalling as needed. Homebrew is considered essential for core software which macOS doesn't ship natively, but which are necessary for your work. Homebrew packages are divided into **formulae**, **casks**, **taps**, or **bottles**; for the time being, we'll only be using formulae and casks.
-
-_Formulae_ installations handle softwares that you'll only interact with through the terminal– meaning, software that doesn't have an "App" interface in the GUI, such as Node. _Cask_ installations, on the other hand, are softwares that you interact with in your GUI, such as the Chrome internet browser.
-
-In terminal, Homebrew utilizes the `brew` command prefix.
-
-</details>
 
 <details><summary>📋 Installation Steps</summary><br>
 
@@ -236,6 +224,16 @@ If this is not the case, view the next section, _Common Errors_.
 <details><summary>❗ Common Errors</summary><br>
 
 It's highly unlikely that this will error out. Even when it's already installed, Homebrew will take the opportunity to install a clean version and update any outdated dependencies.
+
+</details>
+
+<details><summary>🔎 Learn More</summary><br>
+
+Homebrew is a _package manager_, meaning, it provides software packages and can handle safe updating and uninstalling as needed. Homebrew is considered essential for core software which macOS doesn't ship natively, but which are necessary for your work. Homebrew packages are divided into **formulae**, **casks**, **taps**, or **bottles**; for the time being, we'll only be using formulae and casks.
+
+_Formulae_ installations handle softwares that you'll only interact with through the terminal– meaning, software that doesn't have an "App" interface in the GUI, such as Node. _Cask_ installations, on the other hand, are softwares that you interact with in your GUI, such as the Chrome internet browser.
+
+In terminal, Homebrew utilizes the `brew` command prefix.
 
 </details>
 
