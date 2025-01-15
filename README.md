@@ -1,6 +1,6 @@
 # Unix Environment Setup<!-- omit in toc -->
 
-**An extremely thorough guide to setting up a software engineering environment on Unix (macOS).**
+**An overly thorough and opinionated guide to setting up a software engineering environment on Mac.**
 
 <br>
 
@@ -29,7 +29,7 @@
 
 ## OVERVIEW
 
-This guide covers the core technologies your computer will need for a software engineering and web dev environment. Briefly let's overview all of the installations:
+This guide covers the core technologies your computer will need for a software engineering environment. Briefly, let's overview all of the installations:
 
 - Your Terminal Toolbox ([Command Line Tools]);
 - Your Primary Package Manager ([Homebrew]);
@@ -40,14 +40,12 @@ This guide covers the core technologies your computer will need for a software e
 - Your Backend Scripting Language ([Ruby], as well as the version manager, [Rbenv], and some packages, [Ruby Gems]); and
 - Your GUI Applications.
 
-In addition to these installations, I'll also be providing some customizations that will help you make the most of your coding environment, including:
+In addition to these necessary installations, I provide some recommendations that will help you make the most of your coding environment, including:
 
 - Your macOS Environment ([macOS Plugins]);
 - Your Shell Environment ([Terminal Settings], [Zsh Plugins], and [Oh My Zsh Themes]);
 - Your Integrated Development Environment ([VSCode Settings], [VSCode Extensions], and [VSCode Themes]); and finally,
 - Your Browser Environment ([Google Chrome Extensions]).
-
-<br>
 
 Lastly, I'm including "detail" drop-downs like the following:
 
@@ -55,10 +53,10 @@ Lastly, I'm including "detail" drop-downs like the following:
 
 I will use these dropdowns to keep the guide relatively clean and focused, but to still include important details and context about what is happening with each download; I've used this **emoji key** to help with visual indicators:
 
-- **📋 Installation Steps** – Self-explanatory.
-- **⚠️ Warning** – Warnings to avoid common mistakes.
-- **❗ Common Errors** – Common errors and how to resolve them.
-- **🔎 Learn More** – More information on the software and its purpose.
+- **📋 Installation Steps**
+- **⚠️ Warnings**
+- **❗ Common Errors**
+- **🔎 Learn More**
 
 </details><br>
 
@@ -66,27 +64,25 @@ I will use these dropdowns to keep the guide relatively clean and focused, but t
 
 ***
 
-### Some Tips Before You Start
+### Some Tips For Anyone New To Coding
 
 Before you start, I recommend three things:
 
 <details><summary>1) Familiarize Yourself With The Tools of the Trade</summary><br>
 
-If you're _brand_ new to software engineering, or if you aren't particularly comfortable with your computer, including the command line interface, please review the guide to [Tools of the Trade]. Even for experienced engineers, focusing on these more basic tools can **significantly level up one's coding prowess and productivity**.
+If you're _brand_ new to software engineering, or if you aren't particularly comfortable with your computer, shortcuts, and so forth, including the command line interface, please review the guide to [Tools of the Trade]. Even for experienced engineers, focusing on these more basic tools can **significantly level up one's coding prowess and productivity**.
 
 </details>
 
 <details><summary>2) Practice Researching Anything & Everything</summary><br>
 
-With the vast complexities of software engineering, it is simply impossible to know and memorize **everything** you will need on a daily basis. Get used to researching and confirming small details that will make a huge differences.
-
-In this spirit, I've included links to documentation on all the software you'll need, and you can open up the [Glossary] in a new tab; if you have any questions or need to troubleshoot, use these to your advantage.
+With the vast complexities of software engineering, it is simply impossible to know and memorize **everything** you will need on a daily basis. Get used to Googling, it will make a huge difference. In this spirit, I've included links to documentation on all the software you'll need, and you can open up the [Glossary] in a new tab; if you have any questions or need to troubleshoot, use these to your advantage.
 
 </details>
 
 <details><summary>3) Be Thorough & Methodical</summary><br>
 
-Finally, and perhaps most importantly, you **must** use methodical, step-by-step attention to detail. This is integral to a career in software engineering, but especially when setting up your environment, **doing these steps out of order can have long-lasting, code-breaking implications**.
+Finally, and perhaps most importantly, you **must** use methodical, step-by-step attention to detail. This is integral to a career in software engineering, but especially when setting up your laptop and coding environment. **Doing these steps out of order can have code-breaking implications**.
 
 </details><br>
 
@@ -99,9 +95,9 @@ Let's dive in!
 
 ## INSTALLATIONS
 
-This guide will be using **terminal** for all installations. One quick warning:
+This guide will be using **terminal** for all installations.
 
-> ⚠️ While installing, do not use the `sudo` command, unless specifically told to do so. `sudo`, meaning "Super User DO", will often install software in different file/folder locations on your hard drive. This can cause issues in the future.
+> ⚠️ Warning: While installing, do not use the `sudo` command, unless specifically told to do so. `sudo`, meaning "Super User DO", often installs software in different locations on your hard drive, placing them in `root` instead of in your `user` directory. This can cause issues down the line.
 
 Ready to get started? Let's open your terminal!
 
@@ -112,7 +108,7 @@ Ready to get started? Let's open your terminal!
 <br>
 
 <div align="center">
-<img src="assets/code-review.png" width="60%">
+<img src="assets/code-review.png" width="50%">
 </div>
 
 ### Your Terminal Toolbox
@@ -121,11 +117,9 @@ Ready to get started? Let's open your terminal!
 
 > [Xcode Documentation] | [Xcode Resources] | [Command Line Tools Downloads] 
 
-Xcode is Apple's native Integrated Development Environment, or IDE. We won't be using Xcode, but we _will_ be using a subset of the Xcode app, called the _Command Line Tools_ package.
+Xcode is Apple's native Integrated Development Environment, or IDE. For the most part, you won't be using Xcode, unless/until you become more specialized in your career, but we _will_ be using a subset of the Xcode app, called the _Command Line Tools_ package. (If you have the full Xcode suite installed already, skip to the Verify Installation steps.)
 
-> ⚠️ If you have the full Xcode suite installed already, skip to the Verify Installation steps.
-
-<details><summary>📋 View Installation Steps</summary><br>
+<details><summary>📋 Installation Steps</summary><br>
 
 **STEP 1.** Copy and paste the following script into your terminal.
 
@@ -133,25 +127,19 @@ Xcode is Apple's native Integrated Development Environment, or IDE. We won't be 
 xcode-select --install
 ```
 
-**STEP 2.** Follow the UI prompt to install the Command Line Tools. While installing, the prompt will show you a status bar and the approximate time remaining.
-
-If successfully installed, the prompt will tell you, "The software was installed." Click "Done".
+**STEP 2.** Follow the GUI prompt to install the Command Line Tools. While installing, the prompt will show you a status bar and the approximate time remaining. If successfully installed, the prompt will tell you, "The software was installed." Click "Done".
 
 </details>
 
 <details><summary>✅ Verify Installation</summary><br>
 
-To confirm installation, run the command `xcode-select -v`. The output should state `xcode-select version 2384` or higher.
-
-To confirm installation location, run the command `xcode-select -p`. The output should state `/Library/Developer/CommandLineTools`.
+To confirm installation, run the command `xcode-select -v`. The output should state `xcode-select version 2400` or higher. To confirm installation location, run the command `xcode-select -p`. The output should state `/Library/Developer/CommandLineTools`.
 
 </details>
 
 <details><summary>❗ Common Errors</summary><br>
 
-If Command Line Tools are already installed, you will receive `xcode-select: error: command line tools are already installed, use "Software Update" to install updates`.
-
-If Command Line Tools is installed at the wrong path, this may be intentional; if you have the full Xcode suite, the output should state `/Library/Developer/CommandLineTools`; if not, simply try running the following command to reset the path location.
+If Command Line Tools are already installed, you will receive `xcode-select: error: command line tools are already installed, use "Software Update" to install updates`. If Command Line Tools is installed at the wrong path, this may be intentional; if you have the full Xcode suite, the output should state `/Library/Developer/CommandLineTools`; if not, simply try running the following command to reset the path location.
 
 ```shell
 xcode-select -r
@@ -161,7 +149,7 @@ xcode-select -r
 
 <details><summary>🔎 Learn More</summary><br>
 
-At over 12GB, Xcode is a beast of an IDE, and we just don't need to use up that disk space. Instead, we'll use Command Line Tools, which is a smaller package within Xcode. Command Line Tools includes the most commonly used utilities and compilers (_make_, _GNU compiler collection_, _perl_, _git_, etc.), and we will be needing these. In Terminal, Command Line Tools uses `xcode-select` command prefix.
+Clocking in at over 3GB, Xcode is a beast of an IDE, and we just don't need to use up that disk space. That said, we will use Command Line Tools, which is a package within Xcode. Command Line Tools includes the most commonly used utilities and compilers (_make_, _GNU compiler collection_, _perl_, _git_, etc.), and we will be needing these. In Terminal, Command Line Tools uses `xcode-select` command prefix.
 
 </details>
 
@@ -174,7 +162,7 @@ At over 12GB, Xcode is a beast of an IDE, and we just don't need to use up that 
 <br>
 
 <div align="center">
-<img src="assets/packages.png" width="60%">
+<img src="assets/packages.png" width="50%">
 </div>
 
 ### Your Primary Package Manager
@@ -183,7 +171,7 @@ At over 12GB, Xcode is a beast of an IDE, and we just don't need to use up that 
 
 > [Brew Documentation] | [Brew GitHub] | [Brew Issue Tickets]
 
-Homebrew is a _package manager_ for macOS. Most core software you will need for the Unix dev environment is installed via Homebrew.
+Homebrew is a _package manager_ for macOS. Many of the software packages you will need for the Unix dev environment will be installed and maintained via Homebrew.
 
 <details><summary>📋 Installation Steps</summary><br>
 
@@ -203,7 +191,7 @@ Homebrew is a _package manager_ for macOS. Most core software you will need for 
 
 If successfully installed, you will see a large message that begins with `==> Installation successful!`.
 
-**STEP 4.** While Homebrew is now installed, we now have to instruct our terminal to acknowledge `brew` commands. We do this by configuring our shell with a PATH update. Copy and paste the following script, then update the `[username]` to your Admin username, into your terminal.
+**STEP 4.** While Homebrew is now installed, we now have to instruct our terminal to acknowledge `brew` commands. We do this by configuring our shell with a path update. Copy and paste the following script, replacing `[username]` with your laptop's username, into your terminal.
 
 ```shell
 echo >> /Users/[username]/.zprofile
@@ -215,9 +203,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 <details><summary>✅ Verify Installation</summary><br>
 
-To confirm, run the command `brew -v`. The output should state `Homebrew 2.7.7` or higher.
-
-If this is not the case, view the next section, _Common Errors_.
+To confirm, run the command `brew -v`. The output should state `Homebrew 4.4.16` or higher.
 
 </details>
 
@@ -229,9 +215,7 @@ It's highly unlikely that this will error out. Even when it's already installed,
 
 <details><summary>🔎 Learn More</summary><br>
 
-Homebrew is a _package manager_, meaning, it provides software packages and can handle safe updating and uninstalling as needed. Homebrew is considered essential for core software which macOS doesn't ship natively, but which are necessary for your work. Homebrew packages are divided into **formulae**, **casks**, **taps**, or **bottles**; for the time being, we'll only be using formulae and casks.
-
-_Formulae_ installations handle softwares that you'll only interact with through the terminal– meaning, software that doesn't have an "App" interface in the GUI, such as Node. _Cask_ installations, on the other hand, are softwares that you interact with in your GUI, such as the Chrome internet browser.
+Homebrew is a _package manager_, meaning, it provides software packages and can handle safely updating and uninstalling as needed. Homebrew is considered essential for core software which macOS doesn't ship natively, but which are necessary for your work. Homebrew packages are divided into **formulae**, **casks**, **taps**, or **bottles**; for the time being, we'll really only be using formulae and casks. _Formulae_ are for softwares that you'll only interact with through the terminal– meaning, software that doesn't have an "app" interface in the GUI (i.e.: Node). _Casks_ are for softwares that you interact with in your GUI, such as Safari or Chrome.
 
 In terminal, Homebrew utilizes the `brew` command prefix.
 
@@ -245,7 +229,7 @@ In terminal, Homebrew utilizes the `brew` command prefix.
 
 <br>
 <div align="center">
-<img src="assets/programmer.png" width="60%">
+<img src="assets/programmer.png" width="50%">
 </div>
 
 ### Your Terminal Shell
@@ -284,7 +268,7 @@ chsh -s /usr/local/bin/zsh
 
 <details><summary>✅ Verify Installation</summary><br>
 
-To confirm installation, run the command `zsh --version`. The output should be `zsh 5.8` or higher.
+To confirm installation, run the command `zsh --version`. The output should be `zsh 5.9` or higher.
 
 To confirm Zsh has been made your default shell, run `echo $SHELL`. The output should be `bin/zsh`.
 
@@ -302,7 +286,7 @@ To reinstall <version>, run:
   brew reinstall zsh
 ```
 
-If running `echo $SHELL` returned `bin/bash`, this means your default shell has not changed. First, try hard quitting your terminal. (Do not simply close the Terminal window. This doesn't quit the application. Use _command + Q_ to quit.) Once it has quit, reopen terminal and re-run `echo $SHELL`. This should fix the issue.
+If running `echo $SHELL` returned `bin/bash`, this means your default shell has not changed. First, try hard-quitting your terminal. (Do not simply close the Terminal window. This doesn't quit the application. Use _command + Q_ to quit.) Once it has quit, reopen terminal and re-run `echo $SHELL`. This should fix the issue.
 
 </details>
 
@@ -312,7 +296,7 @@ If running `echo $SHELL` returned `bin/bash`, this means your default shell has 
 
 > [Oh My Zsh Documentation] | [Oh My Zsh Github] | [Oh My Zsh Issue Tickets]
 
-Oh My Zsh is a community-driven framework for ZSH. It helps us customize and configure our shell.
+Oh My Zsh is a community-driven framework for Zsh. It helps us customize and configure our shell.
 
 <details><summary>📋 View Installation Steps</summary><br>
 
@@ -335,12 +319,6 @@ If Oh My Zsh is successfully installed, you'll see a large message containing:
 
 </details>
 
-<details><summary>❗ Common Errors</summary><br>
-
-It's highly rare that this step would error out; if you are receiving unexpected returns, visit the Oh My Zsh issue tickets on their GitHub, at the above link, and search for the text of your error message.
-
-</details>
-
 <br>
 
 [back to top ⤴️]
@@ -349,7 +327,7 @@ It's highly rare that this step would error out; if you are receiving unexpected
 
 <br>
 <div align="center">
-<img src="assets/git.png" width="60%">
+<img src="assets/git.png" width="50%">
 </div>
 
 ### Your Version Control Manager
@@ -362,7 +340,7 @@ It's highly rare that this step would error out; if you are receiving unexpected
 
 _Git_ is a free, open-source _version control system_– meaning, it allows teams to collaborate on code that's stored safely in cloud– and comes with built-in tools for avoiding code conflicts.
 
-<details><summary>📋 View Installation Steps</summary><br>
+<details><summary>📋 Installation Steps</summary><br>
 
 **STEP 1.** Run the following Homebrew command in your terminal:
 
@@ -370,9 +348,7 @@ _Git_ is a free, open-source _version control system_– meaning, it allows team
 brew install git
 ```
 
-> ⚠️ Like before, any `brew` command may take an opportunity to upgrade Homebrew dependencies before actually installing the software you've requested– that's all to say, don't worry if a lot seems to be happening when you run a `brew` command.
-
-If successful, you should see multiple Brew installations (the dependencies for the Git software). 
+If successful, you should see multiple Brew installations (the dependencies for the Git software).
 
 </details>
 
@@ -388,20 +364,6 @@ Git version control is the lifeblood of the software engineer. It's nearly unive
 
 </details>
 
-<details><summary>❗ Common Errors</summary><br>
-
-It's highly rare that this step would error out; if you are receiving unexpected returns, visit the Git documentation, at the above link, and search for the text of your error message.
-
-</details>
-
-<details><summary>🔎 Learn More</summary><br>
-
-For you to receive full "credit" for your work, your Git configuration includes your "author information", including your name and email address. Each time you make a commit to your Git repository, the commit includes this information on the commit details, and this enables GitHub to link and credit your commits to your GitHub profile.
-
-By default, your authorship name is the name of your macOS user account, and the email is often that name at your "local" email– for example, `misha@mishasmacbookpro.local`. Obviously, this needs to be updated.
-
-</details>
-
 <br>
 
 #### Git Configurations<!-- omit in toc -->
@@ -410,9 +372,9 @@ We're not done just yet with Git– in order for your computer to utilize your 
 
 <br>
 
-##### Git Identity Information<!-- omit in toc -->
+##### Author Information<!-- omit in toc -->
 
-<details><summary>📋 View Steps</summary><br>
+<details><summary>📋 Steps</summary><br>
 
 **STEP 1.** Run the following command, replacing the name and email address with your own information. (The email should correspond with your personal GitHub account.)
 
@@ -423,19 +385,17 @@ git config --global user.email "misha.kessler@gmail.com"
 
 </details>
 
-<br>
-
-##### Git Default Editor<!-- omit in toc -->
-
 <details><summary>🔎 Learn More</summary><br>
-  
-Occasionally, Git will need to open documents in a code editor, or IDE. By default, the editor used is Vim, a rather confusing interface for novice software engineers. Instead, we'll tell Git to open in our default editor, VS Code. 
 
-(Visual Studio does not need to be installed yet, in order to set up this configuration. We'll cover the installation later in this guide!)
+For you to receive "credit" for your work, your Git configuration includes your "author information", such as your name and email address. Each time you make a commit to your Git repository, the commit includes this authorship information on the commit details; this enables GitHub to link and credit your commits to your GitHub profile. By default, your authorship name is the name of your macOS user account, and the email is often that name at your "local" email– for example, `misha@mishasmacbookpro.local`. Obviously, this needs to be updated to ensure your commits are documented correctly.
 
 </details>
 
-<details><summary>📋 View Steps</summary><br>
+<br>
+
+##### Default Editor<!-- omit in toc -->
+
+<details><summary>📋 Steps</summary><br>
 
 **STEP 1.** Run the following command.
 
@@ -445,17 +405,17 @@ git config --global core.editor "code --wait"
 
 </details>
 
-<br>
-
-##### Git Branch Naming Convention<!-- omit in toc -->
-
 <details><summary>🔎 Learn More</summary><br>
   
-Git handles multiple versions of the same document by creating "branches," and software engineers have strong naming conventions and preferences for these branches. Previously, the main branch was called the `master` branch, but convention has moved away from this name due to its invocation of slavery and the language of oppression. 
+Occasionally, Git will need to open documents in a code editor, or IDE. By default, the editor used is Vim, a rather confusing interface for novice software engineers. Instead, we'll tell Git to open in our default editor, VS Code. 
 
-Now, Git recommends replacing `master` with `main`, but we need to specifically tell our system to start all projects with this name.
+(Visual Studio does not need to be installed yet, in order to set up this configuration. We'll cover the installation later in this guide!)
 
 </details>
+
+<br>
+
+##### Branch Naming Convention<!-- omit in toc -->
 
 <details><summary>📋 View Steps</summary><br>
 
@@ -467,17 +427,17 @@ git config --global init.defaultBranch main
 
 </details>
 
-<br>
-
-##### Git Rebase Convention<!-- omit in toc -->
-
 <details><summary>🔎 Learn More</summary><br>
   
-Rebasing in Git is a tool for integrating changes across versions. Rebasing is a "dangerous" git operation because it alters the Git history– a cardinal sin, when used inappropriately– and occassionally, when dealing with complex git flow, you may be prompted to set your default "pull action." (Don't worry– you'll learn what all of this means soon enough.) Until you understand rebasing, we want to squash that warning by turning off automatic rebasing.
+If you're new to Git, it handles multiple versions of the same document by creating "branches," and software engineers have strong naming conventions and preferences for these branches. Previously, the conventional name for the main branch was `master` branch, but convention has moved away from this name due to its foundation in the language of oppression ("master" and "slave" dynamics). Now, Git recommends replacing `master` with `main`, but we still need to tell our system to start all projects with this name.
 
 </details>
 
-<details><summary>📋 View Steps</summary><br>
+<br>
+
+##### Rebase Convention<!-- omit in toc -->
+
+<details><summary>📋 Steps</summary><br>
 
 **STEP 1.** Run the following command.
 
@@ -487,21 +447,35 @@ git config --global pull.rebase false
 
 </details>
 
+<details><summary>🔎 Learn More</summary><br>
+  
+Rebasing in Git is a tool for integrating changes across versions. Rebasing is a "dangerous" git operation because it alters the Git history– a cardinal sin when used inappropriately– and occassionally, when dealing with complex git flows, you may be prompted to set your default "pull action." (Don't worry– you'll learn what all of this means soon enough.) Until you understand rebasing, we want to squash that warning by turning off automatic rebasing.
+
+</details>
+
 <br>
 
-##### Git Security Token<!-- omit in toc -->
+##### Credential Management<!-- omit in toc -->
+
+<details><summary>📋 Steps</summary><br>
+
+**STEP 1.** Run the following command.
+
+```shell
+brew install --cask git-credential-manager
+```
+
+**STEP 2.** The next time you run a command that requires a secure Git transaction over HTTPS, your CLI will open a browser window to allow you to login to GitHub.
+
+</details>
 
 <details><summary>🔎 Learn More</summary><br>
 
-For you to have full control over your Git repositories from your Terminal, we need to set up your GitHub username and password, a security token, giving your Git-based commands the proper permissions to be executed, and GPG tools, allowing your commits to be verified locally.
+For you to have full control over your Git repositories from your Terminal, we need to set a secure connection to GitHub, giving your Git-based commands the proper permissions to be executed, and GPG tools, allowing your commits to be verified locally.
 
 </details>
 
-<details><summary>📋 View Steps</summary><br>
-
-**STEP 1.** 
-
-</details>
+<br>
 
 <details><summary>✅ Verify Configurations</summary><br>
 
