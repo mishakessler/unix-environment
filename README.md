@@ -1,10 +1,6 @@
 # Unix Environment Setup<!-- omit in toc -->
 
-**An extremely thorough guide to setting up a powerful software engineering environment on Unix (macOS).**
-
-<br>
-
-> ⚠️ **This guide is written for non-M1 chip computers and is tested for errors on macOS Big Sur**. If you are on an M1 chip MacBook, please consult the M1 Version (Coming Soon); if you are on Linux, please consult my Linux Version (Coming Soon). If you are unsure, please consult my Guide to Determining Your Environment (Coming Soon).
+**An extremely thorough guide to setting up a software engineering environment on Unix (macOS).**
 
 <br>
 
@@ -33,7 +29,7 @@
 
 ## OVERVIEW
 
-This guide covers the core technologies your computer will need for a **powerful** software engineering and web dev environment. Briefly let's overview all of the installations:
+This guide covers the core technologies your computer will need for a software engineering and web dev environment. Briefly let's overview all of the installations:
 
 - Your Terminal Toolbox ([Command Line Tools]);
 - Your Primary Package Manager ([Homebrew]);
@@ -59,10 +55,10 @@ Lastly, I'm including "detail" drop-downs like the following:
 
 I will use these dropdowns to keep the guide relatively clean and focused, but to still include important details and context about what is happening with each download; I've used this **emoji key** to help with visual indicators:
 
-- **📋 View Installation Steps** – Self-explanatory.
-- **🔎 Learn More** – More information on the software and its purpose.
+- **📋 Installation Steps** – Self-explanatory.
 - **⚠️ Warning** – Warnings to avoid common mistakes.
 - **❗ Common Errors** – Common errors and how to resolve them.
+- **🔎 Learn More** – More information on the software and its purpose.
 
 </details><br>
 
@@ -72,11 +68,11 @@ I will use these dropdowns to keep the guide relatively clean and focused, but t
 
 ### Some Tips Before You Start
 
-Before you start, I **heavily** recommend three things:
+Before you start, I recommend three things:
 
 <details><summary>1) Familiarize Yourself With The Tools of the Trade</summary><br>
 
-If you're _brand_ new to software engineering, or if you aren't particularly comfortable with your computer, including the command line interface, please review the guide to [Tools of the Trade]. Even for experienced engineers, **focusing on these more basic tools can significantly level up one's coding prowess and productivity**.
+If you're _brand_ new to software engineering, or if you aren't particularly comfortable with your computer, including the command line interface, please review the guide to [Tools of the Trade]. Even for experienced engineers, focusing on these more basic tools can **significantly level up one's coding prowess and productivity**.
 
 </details>
 
@@ -105,7 +101,7 @@ Let's dive in!
 
 This guide will be using **terminal** for all installations. One quick warning:
 
-> ⚠️ While installing, **never** use the `sudo` command, unless specifically told to do so. `sudo`, meaning "Super User DO", will often install software in a different file/folder location on your hard drive, causing issues in the future.
+> ⚠️ While installing, do not use the `sudo` command, unless specifically told to do so. `sudo`, meaning "Super User DO", will often install software in different file/folder locations on your hard drive. This can cause issues in the future.
 
 With that out of the way, ready to get started? Let's open your terminal!
 
@@ -193,9 +189,7 @@ Homebrew is a _package manager_ for macOS. Most core software you will need for 
 
 <details><summary>🔎 Learn More</summary><br>
 
-Homebrew is a _package manager_, meaning, it provides software packages and can handle safe updating and uninstalling as needed. Homebrew is considered essential for core software which macOS doesn't ship natively, but which are necessary for your work.
-
-Homebrew packages are divided into **formulae**, **casks**, **taps**, or **bottles**; for the time being, we'll only be using formulae and casks.
+Homebrew is a _package manager_, meaning, it provides software packages and can handle safe updating and uninstalling as needed. Homebrew is considered essential for core software which macOS doesn't ship natively, but which are necessary for your work. Homebrew packages are divided into **formulae**, **casks**, **taps**, or **bottles**; for the time being, we'll only be using formulae and casks.
 
 _Formulae_ installations handle softwares that you'll only interact with through the terminal– meaning, software that doesn't have an "App" interface in the GUI, such as Node. _Cask_ installations, on the other hand, are softwares that you interact with in your GUI, such as the Chrome internet browser.
 
@@ -203,7 +197,7 @@ In terminal, Homebrew utilizes the `brew` command prefix.
 
 </details>
 
-<details><summary>📋 View Installation Steps</summary><br>
+<details><summary>📋 Installation Steps</summary><br>
 
 **STEP 1.** Copy and paste the following script into your terminal.
 
@@ -220,6 +214,14 @@ In terminal, Homebrew utilizes the `brew` command prefix.
 > ⚠️ While Homebrew is still installing, you won't be able to use your bash command line prompt. You should see multiple processes running.
 
 If successfully installed, you will see a large message that begins with `==> Installation successful!`.
+
+**STEP 4.** While Homebrew is now installed, we now have to instruct our terminal to acknowledge `brew` commands. We do this by configuring our shell with a PATH update. Copy and paste the following script, then update the `[username]` to your Admin username, into your terminal.
+
+```shell
+echo >> /Users/[username]/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/[username]/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
 
 </details>
 
@@ -256,7 +258,7 @@ It's highly unlikely that this will error out. Even when it's already installed,
 
 Zsh, pronounced by the acronym Z-S-H, is a Unix _shell_ and command interpreter for shell scripting. It serves as a replacement for _Bash_, the default Unix Terminal shell.
  
-<details><summary>📋 View Installation Steps</summary><br>
+<details><summary>📋 Installation Steps</summary><br>
 
 **STEP 1.** Copy and paste the following Homebrew command in your terminal.
 
@@ -304,8 +306,6 @@ To reinstall <version>, run:
 
 If running `echo $SHELL` returned `bin/bash`, this means your default shell has not changed. First, try hard quitting your terminal. (Do not simply close the Terminal window. This doesn't quit the application. Use _command + Q_ to quit.) Once it has quit, reopen terminal and re-run `echo $SHELL`. This should fix the issue.
 
-If there are now 
-
 </details>
 
 <br>
@@ -314,7 +314,7 @@ If there are now
 
 > [Oh My Zsh Documentation] | [Oh My Zsh Github] | [Oh My Zsh Issue Tickets]
 
-Oh My Zsh is a community-driven framework for the Z shell. It helps us customize and configure our Z shell.
+Oh My Zsh is a community-driven framework for ZSH. It helps us customize and configure our shell.
 
 <details><summary>📋 View Installation Steps</summary><br>
 
@@ -364,16 +364,6 @@ It's highly rare that this step would error out; if you are receiving unexpected
 
 _Git_ is a free, open-source _version control system_– meaning, it allows teams to collaborate on code that's stored safely in cloud– and comes with built-in tools for avoiding code conflicts.
 
-<details><summary>🔎 Learn More</summary><br>
-
-Git version control is the **lifeblood** of the software engineer. It's almost universally used on all projects, and at all companies, because it's a lightweight, open-source, cloud-based approach to collaborative- yet conflict-free- coding.
-
-Note, _Git_ is not the same as _GitHub_– Git is the _version control system_, whereas GitHub is one of many (and easily the most popular) Git-based project hosting websites. 
-
-(A comparable analogy is an _Img_ file and the _Imgur_ website– Imgur hosts images, but an _Img_ and _Imgur_ are very different things.)
-
-</details>
-
 <details><summary>📋 View Installation Steps</summary><br>
 
 **STEP 1.** Run the following Homebrew command in your terminal:
@@ -390,7 +380,13 @@ If successful, you should see multiple Brew installations (the dependencies for 
 
 <details><summary>✅ Verify Installation</summary><br>
 
-To confirm, run `git --version`. The output should be `git version 2.24.0 (Apple Git-128)` or higher.
+To confirm, run `git --version`. The output should be `git version 2.39.5 (Apple Git-154)` or higher.
+
+</details>
+
+<details><summary>🔎 Learn More</summary><br>
+
+Git version control is the lifeblood of the software engineer. It's nearly universally used on all projects and by all companies, because it's a lightweight, open-source, cloud-based approach to collaborative, conflict-free coding. Note, _Git_ is not the same as _GitHub_– Git is the _version control system_, whereas GitHub is one of many Git-based project hosting websites. (A comparable analogy is an _Img_ file and the _Imgur_ website– Imgur hosts images, but an _Img_ and _Imgur_ are very different things.)
 
 </details>
 
@@ -400,16 +396,6 @@ It's highly rare that this step would error out; if you are receiving unexpected
 
 </details>
 
-<br>
-
-#### Git Configurations<!-- omit in toc -->
-
-We're not done just yet with Git– in order for your computer to utilize your Git VCS correctly, including communicating and syncing with your cloud-based Git repositories, it's highly important that we set up certain Git _configurations_ for your _global environment_.
-
-<br>
-
-##### Git Identity Information<!-- omit in toc -->
-
 <details><summary>🔎 Learn More</summary><br>
 
 For you to receive full "credit" for your work, your Git configuration includes your "author information", including your name and email address. Each time you make a commit to your Git repository, the commit includes this information on the commit details, and this enables GitHub to link and credit your commits to your GitHub profile.
@@ -418,9 +404,19 @@ By default, your authorship name is the name of your macOS user account, and the
 
 </details>
 
+<br>
+
+#### Git Configurations<!-- omit in toc -->
+
+We're not done just yet with Git– in order for your computer to utilize your Git correctly, including communicating and syncing with your cloud-based Git repositories, it's highly important that we set up certain Git _configurations_ for your _global environment_.
+
+<br>
+
+##### Git Identity Information<!-- omit in toc -->
+
 <details><summary>📋 View Steps</summary><br>
 
-**STEP 1.** Run the following command, replacing the name and email address with your own information. (The email should correspond with your personal GitHub account!)
+**STEP 1.** Run the following command, replacing the name and email address with your own information. (The email should correspond with your personal GitHub account.)
 
 ```shell
 git config --global user.name "Misha Kessler"
