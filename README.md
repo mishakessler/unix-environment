@@ -1,31 +1,8 @@
-# Unix Environment Setup<!-- omit in toc -->
+# Unix Environment Setup
 
 **An overly thorough and opinionated guide to setting up a software engineering environment on Mac.**
 
 <br>
-
-## TABLE OF CONTENTS<!-- omit in toc -->
-
-- [OVERVIEW](#overview)
-  - [Some Tips For Anyone New To Coding](#some-tips-for-anyone-new-to-coding)
-- [INSTALLATIONS](#installations)
-  - [Your Terminal Toolbox](#your-terminal-toolbox)
-  - [Your Primary Package Manager](#your-primary-package-manager)
-  - [Your Terminal Shell](#your-terminal-shell)
-  - [Your Version Control Manager](#your-version-control-manager)
-  - [Your Frontend Scripting Language](#your-frontend-scripting-language)
-  - [Your Database Management Programs](#your-database-management-programs)
-  - [Your Backend Scripting Language](#your-backend-scripting-language)
-  - [Your GUI Applications](#your-gui-applications)
-- [CUSTOMIZATIONS](#customizations)
-  - [Your macOS Environment](#your-macos-environment)
-  - [Your Shell Environment](#your-shell-environment)
-  - [Your Integrated Development Environment](#your-integrated-development-environment)
-  - [Your Browser Environment](#your-browser-environment)
-
-<br>
-
-***
 
 ## OVERVIEW
 
@@ -35,7 +12,7 @@ This guide covers the core technologies your computer will need for a software e
 - Your Primary Package Manager ([Homebrew]);
 - Your Terminal Shell ([Zsh] and the [Oh My Zsh] framework);
 - Your Version Control Manager ([Git] and the necessary [Git Configurations]);
-- Your Frontend Scripting Language ([Node.js], as well as the version manager, [NVM], and the package manager, [NPM]);
+- Your Runtime Environment ([Node.js], as well as the version manager, [NVM], and the package manager, [NPM]);
 - Your Database Management Programs ([PostgreSQL] and [MongoDB]);
 - Your Backend Scripting Language ([Ruby], as well as the version manager, [Rbenv], and some packages, [Ruby Gems]); and
 - Your GUI Applications.
@@ -51,9 +28,8 @@ Lastly, I'm including "detail" drop-downs like the following:
 
 <details><summary>Click Me!</summary><br>
 
-I will use these dropdowns to keep the guide relatively clean and focused, but to still include important details and context about what is happening with each download; I've used this **emoji key** to help with visual indicators:
+I will use these dropdowns to keep the guide relatively clean and focused, but to still include important details and context about what is happening with each download. I've used this **emoji key** to help with visual indicators:
 
-- **📋 Installation Steps**
 - **⚠️ Warnings**
 - **❗ Common Errors**
 - **🔎 Learn More**
@@ -62,9 +38,7 @@ I will use these dropdowns to keep the guide relatively clean and focused, but t
 
 <br>
 
-***
-
-### Some Tips For Anyone New To Coding
+## Some Tips For Anyone New To Coding
 
 Before you start, I recommend three things:
 
@@ -91,11 +65,10 @@ Let's dive in!
 <br>
 
 ***
-***
 
 ## INSTALLATIONS
 
-This guide will be using **terminal** for all installations.
+This guide will be using **Terminal** for all installations.
 
 > ⚠️ Warning: While installing, do not use the `sudo` command, unless specifically told to do so. `sudo`, meaning "Super User DO", often installs software in different locations on your hard drive, placing them in `root` instead of in your `user` directory. This can cause issues down the line.
 
@@ -111,9 +84,7 @@ Ready to get started? Let's open your terminal!
 <img src="assets/code-review.png" width="50%">
 </div>
 
-### Your Terminal Toolbox
-
-#### Command Line Tools<!-- omit in toc -->
+### Your Terminal Toolbox: _Command Line Tools_
 
 > [Xcode Documentation] | [Xcode Resources] | [Command Line Tools Downloads] 
 
@@ -129,7 +100,7 @@ xcode-select --install
 
 **STEP 2.** Follow the GUI prompt to install the Command Line Tools. While installing, the prompt will show you a status bar and the approximate time remaining. If successfully installed, the prompt will tell you, "The software was installed." Click "Done".
 
-</details>
+</details> 
 
 <details><summary>✅ Verify Installation</summary><br>
 
@@ -165,9 +136,7 @@ Clocking in at over 3GB, Xcode is a beast of an IDE, and we just don't need to u
 <img src="assets/packages.png" width="50%">
 </div>
 
-### Your Primary Package Manager
-
-#### Homebrew<!-- omit in toc -->
+### Your Primary Package Manager: _Homebrew_
 
 > [Brew Documentation] | [Brew GitHub] | [Brew Issue Tickets]
 
@@ -232,9 +201,7 @@ In terminal, Homebrew utilizes the `brew` command prefix.
 <img src="assets/programmer.png" width="50%">
 </div>
 
-### Your Terminal Shell
-
-#### Zsh<!-- omit in toc -->
+### Your Terminal Shell: _Zsh_
 
 > [Zsh Documentation] | [Zsh Users Project]
 
@@ -292,7 +259,7 @@ If running `echo $SHELL` returned `bin/bash`, this means your default shell has 
 
 <br>
 
-#### Oh My Zsh<!-- omit in toc -->
+### Your Shell Framework: _Oh My Zsh_
 
 > [Oh My Zsh Documentation] | [Oh My Zsh Github] | [Oh My Zsh Issue Tickets]
 
@@ -330,11 +297,7 @@ If Oh My Zsh is successfully installed, you'll see a large message containing:
 <img src="assets/git.png" width="50%">
 </div>
 
-### Your Version Control Manager
-
-<br>
-
-#### Git<!-- omit in toc -->
+### Your Version Control Manager: _Git_
 
 > [Git Documentation] | [Git on Github]
 
@@ -366,13 +329,11 @@ Git version control is the lifeblood of the software engineer. It's nearly unive
 
 <br>
 
-#### Git Configurations<!-- omit in toc -->
+### Your VCS Configurations
 
 We're not done just yet with Git– in order for your computer to utilize your Git correctly, including communicating and syncing with your cloud-based Git repositories, it's highly important that we set up certain Git _configurations_ for your _global environment_.
 
-<br>
-
-##### Author Information<!-- omit in toc -->
+#### Authorship Information
 
 <details><summary>📋 Steps</summary><br>
 
@@ -391,9 +352,7 @@ For you to receive "credit" for your work, your Git configuration includes your 
 
 </details>
 
-<br>
-
-##### Default Editor<!-- omit in toc -->
+#### Default Editor
 
 <details><summary>📋 Steps</summary><br>
 
@@ -407,15 +366,11 @@ git config --global core.editor "code --wait"
 
 <details><summary>🔎 Learn More</summary><br>
   
-Occasionally, Git will need to open documents in a code editor, or IDE. By default, the editor used is Vim, a rather confusing interface for novice software engineers. Instead, we'll tell Git to open in our default editor, VS Code. 
-
-(Visual Studio does not need to be installed yet, in order to set up this configuration. We'll cover the installation later in this guide!)
+Occasionally, Git will need to open documents in a code editor, or IDE. By default, the editor used is Vim, a rather confusing interface for novice software engineers. Instead, we'll tell Git to open in our default editor, VS Code. (Visual Studio does not need to be installed yet, in order to set up this configuration. We'll cover the installation later in this guide!)
 
 </details>
 
-<br>
-
-##### Branch Naming Convention<!-- omit in toc -->
+#### Branch Naming Convention
 
 <details><summary>📋 View Steps</summary><br>
 
@@ -433,9 +388,7 @@ If you're new to Git, it handles multiple versions of the same document by creat
 
 </details>
 
-<br>
-
-##### Rebase Convention<!-- omit in toc -->
+#### Rebase Convention
 
 <details><summary>📋 Steps</summary><br>
 
@@ -453,9 +406,25 @@ Rebasing in Git is a tool for integrating changes across versions. Rebasing is a
 
 </details>
 
-<br>
+#### GitHub
 
-##### Credential Management<!-- omit in toc -->
+<details><summary>📋 Steps</summary><br>
+
+**STEP 1.** Run the following Homebrew command.
+
+```shell
+brew install gh
+```
+
+</details>
+
+<details><summary>🔎 Learn More</summary><br>
+  
+As discussed above, _Git_ and _GitHub_ are different; this CLI package from GitHub allows us to use the `gh` command to interact with our repositories.
+
+</details>
+
+#### GitHub Credential Management
 
 <details><summary>📋 Steps</summary><br>
 
@@ -465,7 +434,11 @@ Rebasing in Git is a tool for integrating changes across versions. Rebasing is a
 brew install --cask git-credential-manager
 ```
 
-**STEP 2.** The next time you run a command that requires a secure Git transaction over HTTPS, your CLI will open a browser window to allow you to login to GitHub.
+**STEP 2.** The next time you run a command that requires a secure Git transaction over HTTPS, your CLI will lead you through a process for logging into GitHub. If you'd like to start the process now, try cloning this glossary for novice software engineers:
+
+```shell
+gh install --cask git-credential-manager
+```
 
 </details>
 
@@ -479,7 +452,7 @@ For you to have full control over your Git repositories from your Terminal, we n
 
 <details><summary>✅ Verify Configurations</summary><br>
 
-To confirm these configurations are correct, run `git config list`. The output should list all the information we've entered, like the following: 
+To confirm these configurations are correct, run `git config list`. The output should list all the information we've entered, similar to the following: 
 
 ```shell
 credential.helper=osxkeychain
@@ -502,49 +475,101 @@ credential.https://dev.azure.com.usehttppath=true
 
 <br>
 <div align="center">
-<img src="assets/web-development.png" width="60%">
+<img src="assets/web-development.png" width="50%">
 </div>
 
-### Your Frontend Scripting Language
+### Your JavaScript Runtime Environment: _Node_
 
-<br>
+_Node_ is an open-source, cross-platform _JavaScript_ runtime environment. Before we discuss Node, we'll want to cover _Node Version Manager_, our software of choice for managing our Node installations.
 
-#### NVM<!-- omit in toc -->
+#### Node Version Manager
 
-[NVM GitHub] | [NVM Troubleshooting] | [NVM Issue Tickets]
+> [NVM on GitHub] | [NVM Troubleshooting] | [NVM Issue Tickets]
 
+<details><summary>📋 Installation Steps</summary><br>
 
+**STEP 1.** Copy and paste the following script into your terminal.
 
-<br>
+```shell
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+```
 
-#### Node.js<!-- omit in toc -->
+**STEP 2.** You should be prompted with a confirmation message, such as `==> Installation successful!`. If so, we no have to instruct our terminal to load NVM and acknowledge our commands. Copy and paste the following script into your terminal.
 
-[Node Website] | [Node Documentation] | [Node GitHub] | [Node Issue Tickets]
+```shell
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+```
 
+</details>
 
-<br>
+<details><summary>✅ Verify Installation</summary><br>
 
-#### NPM<!-- omit in toc -->
+To confirm, run the command `nvm -v`. The output should state `0.40.1` or higher.
 
-[NPM Website] | [NPM Documentation] | [NPM GitHub] | [NPM Issue Tickets]
-
-<br>
-
-#### NPM Configurations<!-- omit in toc -->
+</details>
 
 <details><summary>🔎 Learn More</summary><br>
+
+NVM is one of a few available Node _version managers_, meaning, it provides can handle safely installing, updating, setting local or global versions, and uninstalling Node versions as needed. In terminal, NVM utilizes the `nvm` command prefix.
+
 </details>
 
-<details><summary>📋 View Steps</summary><br>
+#### Node & Node Package Manager
+
+> [Node Website] | [Node Documentation] | [Node on GitHub] | [Node Issue Tickets]
+
+<details><summary>📋 Installation Steps</summary><br>
+
+**STEP 1.** With NVM installed, now copy and paste the following script into your terminal.
+
+```shell
+nvm install 23
+```
+
 </details>
+
+<details><summary>✅ Verify Installation</summary><br>
+
+Following Step 1, you should be prompted with a confirmation message, such as `Now using node v23.6.0 (npm v10.9.2)`. To confirm, run the commands `nvm current` and `node -v`. Both should output `v23.6.0` or higher.
+
+</details>
+
+#### Yarn
+
+> [Yarn Website] | [Yarn Documentation] | [Yarn on GitHub] | [Yarn Issue Tickets]
+
+<details><summary>📋 Installation Steps</summary><br>
+
+**STEP 1.** While Node also installed _Node Package Manager_, we're going to use an alternative to NPM called _Yarn_. (This can boil down to personal preference, but I'm a fan of Yarn.) Copy and paste the following command into your terminal.
+
+```shell
+corepack enable yarn
+```
+
+**STEP 2.** Following Step 1, you won't receive a confirmation message. Nexxt, run the command `yarn -v`. You will be prompted with the following message: 
+
+```shell
+! Corepack is about to download https://registry.yarnpkg.com/yarn/-/yarn-1.22.22.tgz
+? Do you want to continue? [Y/n]
+```
+
+**STEP 3.** Press `y` and `return`. 
+
+</details>
+
+<details><summary>✅ Verify Installation</summary><br>
+
+Following Step 3, you should see the output from your `yarn -v` command; the version should be `1.22.22` or higher.
+
+</details>
+
+
+#### JavaScript Add-Ons
 
 <br>
 
-#### JavaScript Add-Ons<!-- omit in toc -->
-
-<br>
-
-##### TypeScript<!-- omit in toc -->
+##### TypeScript
 
 [TypeScript Website] | [TypeScript Documentation] | [TypeScript GitHub] | [TypeScript Issue Tickets]
 
@@ -570,14 +595,14 @@ credential.https://dev.azure.com.usehttppath=true
 
 <br>
 
-#### PostgreSQL<!-- omit in toc -->
+#### PostgreSQL
 
 [PostgreSQL Website] | [PostgreSQL Documentation] | [PostgreSQL GitHub] | [PostgreSQL Issue Tickets]
 
 
 <br>
 
-#### MongoDB<!-- omit in toc -->
+#### MongoDB
 
 [MongoDB Website] | [MongoDB Documentation] | [MongoDB GitHub] | [MongoDB Issue Tickets]
 
@@ -597,19 +622,19 @@ credential.https://dev.azure.com.usehttppath=true
 
 <br>
 
-#### Rbenv<!-- omit in toc -->
+#### Rbenv
 
 <br>
 
-#### Ruby<!-- omit in toc -->
+#### Ruby
 
 <br>
 
-#### Ruby Gems<!-- omit in toc -->
+#### Ruby Gems
 
 <br>
 
-##### Pry<!-- omit in toc -->
+##### Pry
 
 <details><summary>🔎 Learn More</summary><br>
 </details>
@@ -619,7 +644,7 @@ credential.https://dev.azure.com.usehttppath=true
 
 <br>
 
-##### Rspec<!-- omit in toc -->
+##### Rspec
 
 <details><summary>🔎 Learn More</summary><br>
 </details>
@@ -629,7 +654,7 @@ credential.https://dev.azure.com.usehttppath=true
 
 <br>
 
-##### Rails<!-- omit in toc -->
+##### Rails
 
 <details><summary>🔎 Learn More</summary><br>
 </details>
@@ -653,19 +678,19 @@ credential.https://dev.azure.com.usehttppath=true
 
 <br>
 
-#### Google Chrome<!-- omit in toc -->
+#### Google Chrome
 
 <br>
 
-#### iTerm2<!-- omit in toc -->
+#### iTerm2
 
 <br>
 
-#### Visual Studio Code<!-- omit in toc -->
+#### Visual Studio Code
 
 <br>
 
-#### PostMan<!-- omit in toc -->
+#### PostMan
 
 <br>
 
@@ -691,11 +716,11 @@ credential.https://dev.azure.com.usehttppath=true
 
 <br>
 
-#### macOS Plugins<!-- omit in toc -->
+#### macOS Plugins
 
 <br>
 
-##### Magnet<!-- omit in toc -->
+##### Magnet
 
 <details><summary>🔎 Learn More</summary><br>
 </details>
@@ -720,15 +745,15 @@ credential.https://dev.azure.com.usehttppath=true
 
 <br>
 
-#### Terminal Settings<!-- omit in toc -->
+#### Terminal Settings
 
 <br>
 
-#### Zsh Plugins<!-- omit in toc -->
+#### Zsh Plugins
 
 <br>
 
-##### Zsh Completions<!-- omit in toc -->
+##### Zsh Completions
 
 <details><summary>🔎 Learn More</summary><br>
 </details>
@@ -738,7 +763,7 @@ credential.https://dev.azure.com.usehttppath=true
 
 <br>
 
-#### Oh My Zsh Themes<!-- omit in toc -->
+#### Oh My Zsh Themes
 
 <br>
 
@@ -755,15 +780,15 @@ credential.https://dev.azure.com.usehttppath=true
 
 <br>
 
-#### VSCode Settings<!-- omit in toc -->
+#### VSCode Settings
 
 <br>
 
-#### VSCode Extensions<!-- omit in toc -->
+#### VSCode Extensions
 
 <br>
 
-##### Bracket Pair Colorizer<!-- omit in toc -->
+##### Bracket Pair Colorizer
 
 <details><summary>🔎 Learn More</summary><br>
 </details>
@@ -773,7 +798,7 @@ credential.https://dev.azure.com.usehttppath=true
 
 <br>
 
-##### Indent Rainbow<!-- omit in toc --> 
+##### Indent Rainbow 
 
 <details><summary>🔎 Learn More</summary><br>
 </details>
@@ -783,9 +808,9 @@ credential.https://dev.azure.com.usehttppath=true
 
 <br>
 
-#### VSCode Themes<!-- omit in toc -->
+#### VSCode Themes
 
-##### Color Themes<!-- omit in toc -->
+##### Color Themes
 
 <details><summary>🔎 Learn More</summary><br>
 </details>
@@ -795,7 +820,7 @@ credential.https://dev.azure.com.usehttppath=true
 
 <br>
 
-##### Icon Themes<!-- omit in toc -->
+##### Icon Themes
 
 <details><summary>🔎 Learn More</summary><br>
 </details>
@@ -818,11 +843,11 @@ credential.https://dev.azure.com.usehttppath=true
 
 <br>
 
-#### Google Chrome Extensions<!-- omit in toc -->
+#### Google Chrome Extensions
 
 <br>
 
-##### React Dev Tools<!-- omit in toc -->
+##### React Dev Tools
 
 <details><summary>🔎 Learn More</summary><br>
 </details>
@@ -832,7 +857,7 @@ credential.https://dev.azure.com.usehttppath=true
 
 <br>
 
-##### Color Picker<!-- omit in toc -->
+##### Color Picker
 
 <details><summary>🔎 Learn More</summary><br>
 </details>
@@ -842,7 +867,7 @@ credential.https://dev.azure.com.usehttppath=true
 
 <br>
 
-##### JSON Viewer<!-- omit in toc -->
+##### JSON Viewer
 
 <details><summary>🔎 Learn More</summary><br>
 </details>
@@ -899,21 +924,21 @@ credential.https://dev.azure.com.usehttppath=true
 
 [Your Frontend Scripting Language]: #your-frontend-scripting-language
 [NVM]: #nvm
-[NVM GitHub]: https://github.com/nvm-sh/nvm
+[NVM on GitHub]: https://github.com/nvm-sh/nvm
 [NVM Troubleshooting]: https://github.com/nvm-sh/nvm#troubleshooting-on-macos
 [NVM Issue Tickets]: https://github.com/nvm-sh/nvm/issues
 
 [Node.js]: #nodejs
 [Node Website]: https://nodejs.org/en/
 [Node Documentation]: https://nodejs.org/en/docs/guides/
-[Node GitHub]: https://github.com/nodejs/node
+[Node on GitHub]: https://github.com/nodejs/node
 [Node Issue Tickets]: https://github.com/nodejs/node/issues
 
 [NPM]: #npm
-[NPM Website]: https://www.npmjs.com/
-[NPM Documentation]: https://docs.npmjs.com/
-[NPM GitHub]: https://github.com/npm/cli
-[NPM Issue Tickets]: https://github.com/npm/cli/issues
+[Yarn Website]: https://yarnpkg.com/
+[Yarn Documentation]: https://yarnpkg.com/getting-started
+[Yarn on GitHub]: https://github.com/yarnpkg/
+[Yarn Issue Tickets]: https://github.com/yarnpkg/yarn/issues
 
 [JavaScript Add-Ons]: #javascript-add-ons
 [TypeScript]: #typescript
