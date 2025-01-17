@@ -7,7 +7,7 @@
 ## TABLE OF CONTENTS<!-- omit in toc -->
 
 - [OVERVIEW](#overview)
-  - [Some Tips Before You Start](#some-tips-before-you-start)
+  - [Some Tips For Anyone New To Coding](#some-tips-for-anyone-new-to-coding)
 - [INSTALLATIONS](#installations)
   - [Your Terminal Toolbox](#your-terminal-toolbox)
   - [Your Primary Package Manager](#your-primary-package-manager)
