@@ -81,7 +81,7 @@ Ready to get started? Let's open your terminal!
 <br>
 
 <div align="center">
-<img src="assets/code-review.png" width="50%">
+<img src="assets/code-review.png" width="40%">
 </div>
 
 ### Your Terminal Toolbox: _Command Line Tools_
@@ -133,7 +133,7 @@ Clocking in at over 3GB, Xcode is a beast of an IDE, and we just don't need to u
 <br>
 
 <div align="center">
-<img src="assets/packages.png" width="50%">
+<img src="assets/packages.png" width="40%">
 </div>
 
 ### Your Primary Package Manager: _Homebrew_
@@ -198,7 +198,7 @@ In terminal, Homebrew utilizes the `brew` command prefix.
 
 <br>
 <div align="center">
-<img src="assets/programmer.png" width="50%">
+<img src="assets/programmer.png" width="40%">
 </div>
 
 ### Your Terminal Shell: _Zsh_
@@ -294,7 +294,7 @@ If Oh My Zsh is successfully installed, you'll see a large message containing:
 
 <br>
 <div align="center">
-<img src="assets/git.png" width="50%">
+<img src="assets/git.png" width="40%">
 </div>
 
 ### Your Version Control Manager: _Git_
@@ -475,7 +475,7 @@ credential.https://dev.azure.com.usehttppath=true
 
 <br>
 <div align="center">
-<img src="assets/web-development.png" width="50%">
+<img src="assets/web-development.png" width="40%">
 </div>
 
 ### Your JavaScript Runtime Environment: _Node_
@@ -564,21 +564,11 @@ Following Step 3, you should see the output from your `yarn -v` command; the ver
 
 </details>
 
-
-#### JavaScript Add-Ons
-
 <br>
 
-##### TypeScript
+#### TypeScript
 
-[TypeScript Website] | [TypeScript Documentation] | [TypeScript GitHub] | [TypeScript Issue Tickets]
-
-
-<details><summary>🔎 Learn More</summary><br>
-</details>
-
-<details><summary>📋 View Steps</summary><br>
-</details>
+> [TypeScript Website] | [TypeScript Documentation] | [TypeScript GitHub] | [TypeScript Issue Tickets]
 
 <br>
 
@@ -588,24 +578,19 @@ Following Step 3, you should see the output from your `yarn -v` command; the ver
 
 <br>
 <div align="center">
-<img src="assets/server-cluster.png" width="60%">
+<img src="assets/server-cluster.png" width="40%">
 </div>
 
-### Your Database Management Programs
-
-<br>
+### Your Database Management Programs: _PostgreSQL_ and _MongoDB_
 
 #### PostgreSQL
 
-[PostgreSQL Website] | [PostgreSQL Documentation] | [PostgreSQL GitHub] | [PostgreSQL Issue Tickets]
+> [PostgreSQL Website] | [PostgreSQL Documentation] | [PostgreSQL GitHub] | [PostgreSQL Issue Tickets]
 
-
-<br>
 
 #### MongoDB
 
-[MongoDB Website] | [MongoDB Documentation] | [MongoDB GitHub] | [MongoDB Issue Tickets]
-
+> [MongoDB Website] | [MongoDB Documentation] | [MongoDB GitHub] | [MongoDB Issue Tickets]
 
 <br>
 
@@ -615,53 +600,22 @@ Following Step 3, you should see the output from your `yarn -v` command; the ver
 
 <br>
 <div align="center">
-<img src="assets/dev-productivity.png" width="60%">
+<img src="assets/dev-productivity.png" width="40%">
 </div>
 
-### Your Backend Scripting Language
-
-<br>
+### Your Backend Scripting Languages: _Ruby_ and _Python_
 
 #### Rbenv
 
-<br>
-
 #### Ruby
-
-<br>
 
 #### Ruby Gems
 
-<br>
-
 ##### Pry
-
-<details><summary>🔎 Learn More</summary><br>
-</details>
-
-<details><summary>📋 View Steps</summary><br>
-</details>
-
-<br>
 
 ##### Rspec
 
-<details><summary>🔎 Learn More</summary><br>
-</details>
-
-<details><summary>📋 View Steps</summary><br>
-</details>
-
-<br>
-
 ##### Rails
-
-<details><summary>🔎 Learn More</summary><br>
-</details>
-
-<details><summary>📋 View Steps</summary><br>
-</details>
-
 
 <br>
 
@@ -671,64 +625,20 @@ Following Step 3, you should see the output from your `yarn -v` command; the ver
 
 <br>
 <div align="center">
-<img src="assets/browsers.png" width="60%">
+<img src="assets/browsers.png" width="40%">
 </div>
 
 ### Your GUI Applications
 
-<br>
-
-#### Google Chrome
-
-<br>
-
 #### iTerm2
-
-<br>
 
 #### Visual Studio Code
 
-<br>
+#### Google Chrome
 
 #### PostMan
 
-<br>
-
-[back to top ⤴️]
-
-***
-***
-
-<br>
-
-## CUSTOMIZATIONS
-
-<br>
-
-***
-
-<br>
-<div align="center">
-<img src="assets/dev-productivity.png" width="60%">
-</div>
-
-### Your macOS Environment
-
-<br>
-
-#### macOS Plugins
-
-<br>
-
-##### Magnet
-
-<details><summary>🔎 Learn More</summary><br>
-</details>
-
-<details><summary>📋 View Steps</summary><br>
-</details>
-
-<br>
+#### Docker
 
 <br>
 
@@ -738,30 +648,16 @@ Following Step 3, you should see the output from your `yarn -v` command; the ver
 
 <br>
 <div align="center">
-<img src="assets/design-font.png" width="60%">
+<img src="assets/design-font.png" width="40%">
 </div>
 
-### Your Shell Environment
-
-<br>
+### Your Shell Environment: _Zsh Plugins & Settings_
 
 #### Terminal Settings
 
-<br>
-
 #### Zsh Plugins
 
-<br>
-
-##### Zsh Completions
-
-<details><summary>🔎 Learn More</summary><br>
-</details>
-
-<details><summary>📋 View Steps</summary><br>
-</details>
-
-<br>
+#### Zsh Completions
 
 #### Oh My Zsh Themes
 
@@ -773,60 +669,21 @@ Following Step 3, you should see the output from your `yarn -v` command; the ver
 
 <br>
 <div align="center">
-<img src="assets/noted.png" width="60%">
+<img src="assets/noted.png" width="40%">
 </div>
 
-### Your Integrated Development Environment
-
-<br>
+### Your Integrated Development Environment: _VSCode Extensions & Settings_
 
 #### VSCode Settings
 
-<br>
+#### Bracket Pair Colorizer
 
-#### VSCode Extensions
+#### Indent Rainbow 
 
-<br>
+#### Color Themes
 
-##### Bracket Pair Colorizer
+#### Icon Themes
 
-<details><summary>🔎 Learn More</summary><br>
-</details>
-
-<details><summary>📋 View Steps</summary><br>
-</details>
-
-<br>
-
-##### Indent Rainbow 
-
-<details><summary>🔎 Learn More</summary><br>
-</details>
-
-<details><summary>📋 View Steps</summary><br>
-</details>
-
-<br>
-
-#### VSCode Themes
-
-##### Color Themes
-
-<details><summary>🔎 Learn More</summary><br>
-</details>
-
-<details><summary>📋 View Steps</summary><br>
-</details>
-
-<br>
-
-##### Icon Themes
-
-<details><summary>🔎 Learn More</summary><br>
-</details>
-
-<details><summary>📋 View Steps</summary><br>
-</details>
 
 <br>
 
@@ -836,51 +693,20 @@ Following Step 3, you should see the output from your `yarn -v` command; the ver
 
 <br>
 <div align="center">
-<img src="assets/pwa.png" width="60%">
+<img src="assets/pwa.png" width="40%">
 </div>
 
-### Your Browser Environment
+### Your Browser Environment: _Chrome Extensions_
 
-<br>
+#### React Dev Tools
 
-#### Google Chrome Extensions
+#### Color Picker
 
-<br>
-
-##### React Dev Tools
-
-<details><summary>🔎 Learn More</summary><br>
-</details>
-
-<details><summary>📋 View Steps</summary><br>
-</details>
-
-<br>
-
-##### Color Picker
-
-<details><summary>🔎 Learn More</summary><br>
-</details>
-
-<details><summary>📋 View Steps</summary><br>
-</details>
-
-<br>
-
-##### JSON Viewer
-
-<details><summary>🔎 Learn More</summary><br>
-</details>
-
-<details><summary>📋 View Steps</summary><br>
-</details>
-
+#### JSON Viewer
 
 <br>
 
 [back to top ⤴️]
-
-***
 
 <!-- Links -->
 [Guide to Determining Your Environment]: https://github.com/mishakessler/determine-your-environment
